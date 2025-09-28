@@ -1,0 +1,8 @@
+
+
+# for python
+.venv
+venv
+.conda
+.pyc
+.ipynb_checkpoints/
