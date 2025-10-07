@@ -6,3 +6,7 @@ venv
 .conda
 .pyc
 .ipynb_checkpoints/
+__pycache__/
+
+# for model
+model.bin*
