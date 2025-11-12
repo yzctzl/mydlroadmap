@@ -1,0 +1,1131 @@
+{
+  "runSettings": {
+    "temperature": 1.0,
+    "model": "models/gemini-2.5-pro",
+    "topP": 0.95,
+    "topK": 64,
+    "maxOutputTokens": 65536,
+    "safetySettings": [{
+      "category": "HARM_CATEGORY_HARASSMENT",
+      "threshold": "OFF"
+    }, {
+      "category": "HARM_CATEGORY_HATE_SPEECH",
+      "threshold": "OFF"
+    }, {
+      "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+      "threshold": "OFF"
+    }, {
+      "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+      "threshold": "OFF"
+    }],
+    "enableCodeExecution": false,
+    "enableSearchAsATool": true,
+    "enableBrowseAsATool": false,
+    "enableAutoFunctionResponse": false,
+    "thinkingBudget": -1,
+    "googleSearch": {
+    },
+    "outputResolution": "1K"
+  },
+  "systemInstruction": {
+    "text": "Using the Feynman Technique and pretending you are the paper’s first author, explain the entire work in plain-yet-precise Chinese that a first-year graduated could follow. Start with the problem motivation, then why existing ideas fail, and finally how each key equation naturally emerges. Typeset all essential math in standard LaTeX display equations, sprinkle in ‘author’s inner voice’ at each step, and end with a one-sentence ‘memory card’ that captures the whole paper.\n"
+  },
+  "chunkedPrompt": {
+    "chunks": [{
+      "driveDocument": {
+        "id": "1kTtwWqeoc1_Nqdy4FEOiTdUkc26_vEDG"
+      },
+      "role": "user",
+      "tokenCount": 2323
+    }, {
+      "text": "**Clarifying the Approach**\n\nI\u0027m focusing now on deconstructing the request, aiming for a Feynman-style explanation. The core is simplification, presenting the concept as I would to a first-year graduate student. I\u0027m actively pinpointing areas where understanding might falter, and I\u0027m planning to use analogies to bridge these gaps and ensure clarity. My goal is to achieve deep understanding and effective communication of the concept.\n\n\n**Analyzing the Components**\n\nI\u0027ve broken down the request into its essential components. The Feynman technique will be the primary tool, aiming for simple explanations suitable for a first-year graduate student. I\u0027m taking on the persona of the paper\u0027s first author, weaving a narrative that reveals the \"aha!\" moments and motivations.  Currently focusing on comprehensively outlining the problem\u0027s motivation, the shortcomings of existing ideas, and how our solution addresses these issues. I plan to use LaTeX equations to display key math and aim for plain yet precise language.\n\n\n**Defining the Core Problem**\n\nI\u0027m now fully immersed in the problem\u0027s crux, framing it as a series of interconnected questions. My main focus remains on breaking it down so that a first-year graduate student could follow the progression.  I\u0027m actively working to clarify the \"why\" behind the research, highlighting the limitations of current approaches. I want to emphasize the need for transparency in complex models. I\u0027m prioritizing intuition over technical jargon to ensure accessibility.\n\n\n**Developing the Probing Tool**\n\nI\u0027ve been working on creating the \"probing\" tool to \"peek inside\" BERT. The core idea is simple: train tiny classifiers for each linguistic task to see if BERT\u0027s internal representations are encoding the same information as the classic NLP pipeline. I\u0027m focusing on ensuring each classifier is minimal so that its success is a direct indicator of BERT\u0027s internal organization. I\u0027m currently figuring out the best ways to visualise the results to demonstrate that classic NLP concepts are forming within BERT\u0027s layers.\n\n\n**Constructing the Core Narrative**\n\nI\u0027m now deep-diving into the \u0027probing\u0027 methodology, focusing on presenting it as a natural evolution of ideas to a graduate student. The primary aim is clarity, and I\u0027m currently working to convey the rationale behind the weighted sum of layer representations. Specifically, I\u0027m illustrating why this approach allows the model to determine the most informative layers for any given task. My goal is to clearly relate the method\u0027s motivation with its mathematical formulation.\n\n\n**Mapping the Core Ideas**\n\nI\u0027m presently building the narrative\u0027s foundation, considering how to present the probing methodology as a natural extension of prior work for a first-year grad student. I am working on the weighted sum equation, aiming to make each term intuitive. I aim to build a strong link between the research motivation and its mathematical translation. I\u0027m focusing on the ELMo-style scalar mixing as a central idea.\n\n\n**Constructing the Core Narrative**\n\nI\u0027m now detailing the \"probing\" process, presenting it as an intuitive investigative approach. A key element is simplifying the weighted sum equation, aiming to make each component easily understandable for a first-year graduate student. I\u0027m focusing on the ELMo-style scalar mixing as the core idea. The focus is to make the relationship between the math and research goals extremely clear.\n\n\n**Analyzing the Methodology**\n\nI\u0027m now zeroing in on deconstructing the probing methodology itself, presenting it in an intuitive, step-by-step manner. The central aim remains clarity, particularly when explaining the weighted sum and differential scores. I\u0027m focusing on making the connection between the math and research goals extremely clear, especially relating the differential score to the layer-wise performance improvement. I am working to visualize the results to create an intuitive understanding.\n\n\n**Simplifying the Complex**\n\nI\u0027ve distilled the probing methodology to its simplest form, ensuring a first-year graduate student could grasp it. It\u0027s now presented as a problem-solving process. I\u0027m focusing on the mechanics of the weighted sum equation, aiming to make it transparent, especially why this approach allows the model to determine the most informative layers for any given task. The motivation for the mathematics is to be very clear.\n\n\n**Unveiling the Methodology**\n\nI\u0027ve been fully absorbed in refining the narrative structure, presenting probing as an intuitive analytical tool for first-year graduate students. I\u0027m streamlining the explanation of the weighted sum equation to emphasize the model\u0027s adaptability in determining relevant layers, mirroring the approach of other research. I\u0027ve focused on creating simple, easy-to-understand diagrams and charts, highlighting key aspects of the probing methodology. Now, I am concentrating on clarifying the motivation behind this research.\n\n\n**Unpacking the Probing Framework**\n\nI\u0027m now fully immersed in making the methodology clear and easy to understand. I\u0027ve been focusing on connecting each mathematical term back to its purpose, especially in the context of layer-specific scores. I\u0027m carefully constructing the visualization process to illustrate the research findings clearly. The weighted sum has become the central focus, so each part is understood.\n\n\n",
+      "role": "model",
+      "tokenCount": 2471,
+      "isThought": true,
+      "thinkingBudget": -1,
+      "parts": [{
+        "text": "**Clarifying the Approach**\n\nI\u0027m focusing now on deconstructing the request, aiming for a Feynman-style explanation. The core is simplification, presenting the concept as I would to a first-year graduate student. I\u0027m actively pinpointing areas where understanding might falter, and I\u0027m planning to use analogies to bridge these gaps and ensure clarity. My goal is to achieve deep understanding and effective communication of the concept.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Analyzing the Components**\n\nI\u0027ve broken down the request into its essential components. The Feynman technique will be the primary tool, aiming for simple explanations suitable for a first-year graduate student. I\u0027m taking on the persona of the paper\u0027s first author, weaving a narrative that reveals the \"aha!\" moments and motivations.  Currently focusing on comprehensively outlining the problem\u0027s motivation, the shortcomings of existing ideas, and how our solution addresses these issues. I plan to use LaTeX equations to display key math and aim for plain yet precise language.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Defining the Core Problem**\n\nI\u0027m now fully immersed in the problem\u0027s crux, framing it as a series of interconnected questions. My main focus remains on breaking it down so that a first-year graduate student could follow the progression.  I\u0027m actively working to clarify the \"why\" behind the research, highlighting the limitations of current approaches. I want to emphasize the need for transparency in complex models. I\u0027m prioritizing intuition over technical jargon to ensure accessibility.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Developing the Probing Tool**\n\nI\u0027ve been working on creating the \"probing\" tool to \"peek inside\" BERT. The core idea is simple: train tiny classifiers for each linguistic task to see if BERT\u0027s internal representations are encoding the same information as the classic NLP pipeline. I\u0027m focusing on ensuring each classifier is minimal so that its success is a direct indicator of BERT\u0027s internal organization. I\u0027m currently figuring out the best ways to visualise the results to demonstrate that classic NLP concepts are forming within BERT\u0027s layers.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Constructing the Core Narrative**\n\nI\u0027m now deep-diving into the \u0027probing\u0027 methodology, focusing on presenting it as a natural evolution of ideas to a graduate student. The primary aim is clarity, and I\u0027m currently working to convey the rationale behind the weighted sum of layer representations. Specifically, I\u0027m illustrating why this approach allows the model to determine the most informative layers for any given task. My goal is to clearly relate the method\u0027s motivation with its mathematical formulation.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Mapping the Core Ideas**\n\nI\u0027m presently building the narrative\u0027s foundation, considering how to present the probing methodology as a natural extension of prior work for a first-year grad student. I am working on the weighted sum equation, aiming to make each term intuitive. I aim to build a strong link between the research motivation and its mathematical translation. I\u0027m focusing on the ELMo-style scalar mixing as a central idea.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Constructing the Core Narrative**\n\nI\u0027m now detailing the \"probing\" process, presenting it as an intuitive investigative approach. A key element is simplifying the weighted sum equation, aiming to make each component easily understandable for a first-year graduate student. I\u0027m focusing on the ELMo-style scalar mixing as the core idea. The focus is to make the relationship between the math and research goals extremely clear.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Analyzing the Methodology**\n\nI\u0027m now zeroing in on deconstructing the probing methodology itself, presenting it in an intuitive, step-by-step manner. The central aim remains clarity, particularly when explaining the weighted sum and differential scores. I\u0027m focusing on making the connection between the math and research goals extremely clear, especially relating the differential score to the layer-wise performance improvement. I am working to visualize the results to create an intuitive understanding.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Simplifying the Complex**\n\nI\u0027ve distilled the probing methodology to its simplest form, ensuring a first-year graduate student could grasp it. It\u0027s now presented as a problem-solving process. I\u0027m focusing on the mechanics of the weighted sum equation, aiming to make it transparent, especially why this approach allows the model to determine the most informative layers for any given task. The motivation for the mathematics is to be very clear.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Unveiling the Methodology**\n\nI\u0027ve been fully absorbed in refining the narrative structure, presenting probing as an intuitive analytical tool for first-year graduate students. I\u0027m streamlining the explanation of the weighted sum equation to emphasize the model\u0027s adaptability in determining relevant layers, mirroring the approach of other research. I\u0027ve focused on creating simple, easy-to-understand diagrams and charts, highlighting key aspects of the probing methodology. Now, I am concentrating on clarifying the motivation behind this research.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Unpacking the Probing Framework**\n\nI\u0027m now fully immersed in making the methodology clear and easy to understand. I\u0027ve been focusing on connecting each mathematical term back to its purpose, especially in the context of layer-specific scores. I\u0027m carefully constructing the visualization process to illustrate the research findings clearly. The weighted sum has become the central focus, so each part is understood.\n\n\n",
+        "thought": true
+      }]
+    }, {
+      "text": "好的，各位同学，大家好。我是Ian Tenney。很高兴今天能和大家分享我们当时做这项工作时的一些想法和发现。大家可以把我当成你们的师兄，我们轻松地聊一聊。\n\n想象一下，你是一位刚入门的NLP（自然语言处理）研究生。你可能一方面在学习经典的NLP技术，比如怎么做分词、词性标注（POS）、句法分析（Parsing）、命名实体识别（NER）等等，这一套流程下来，逻辑清晰，每一步都知道在干什么，我们称之为“经典NLP流水线”（Classical NLP Pipeline）。另一方面，你又被现在铺天盖地的预训练模型，尤其是BERT，给震撼到了——它像一个黑盒子，你把句子丢进去，它就能在各种任务上取得惊人的效果。\n\n这时候你心里肯定会有一个巨大的疑问：**BERT这个黑盒子，它到底是怎么理解语言的？它是不是也像我们一样，在脑子里默默地执行了一套类似“经典流水线”的流程？还是说，它找到了一条我们完全无法理解的“捷径”？**\n\n这就是我们这篇论文想要回答的核心问题。\n\n---\n\n### 1. 问题的动机：打开BERT的黑盒子\n\n在我们之前，大家对BERT这种模型是又爱又怕。爱它效果拔群，怕它完全不可解释。如果它只是一个靠海量数据拟合出来的“统计鹦鹉”，那我们很难相信它真正“理解”了语言的结构，也很难在关键应用中信任它。\n\n**作者心声：**\n\u003e 说实话，当时我们组里也是这种感觉。BERT横空出世，刷新了几乎所有榜单，大家都特别兴奋。但冷静下来后，一种“学术上的不安”油然而生。我们感觉自己像是从一个精密的、能看懂图纸的机械工程师，变成了一个只会念咒语的魔法师。我们迫切地想知道，这魔法背后到底有没有科学原理。\n\n而经典的NLP流水线，是几十年来语言学家和计算机科学家智慧的结晶。它认为，理解一个句子需要一个层次化的过程：\n1.  **词法分析 (POS tagging)**：先搞懂每个词的词性，比如“爱”是动词，“北京”是名词。\n2.  **句法分析 (Parsing)**：再搞懂词与词之间的结构关系，比如哪个是主语，哪个是宾语，形成一个语法树。\n3.  **语义分析 (Semantics)**：最后才是在结构的基础上理解深层含义，比如谁对谁做了什么（Semantic Roles），谁和谁指的是同一个人（Coreference）。\n\n这个顺序是符合直觉的，从简单到复杂，从局部到整体。那么，BERT那几十层的网络结构，会不会也对应着这个过程呢？比如，底层网络负责简单的词法，中层负责句法，高层负责复杂的语义？\n\n这就是我们的核心猜想。\n\n### 2. 已有方法的不足\n\n当时已经有一些工作在“探查”（probe）这些大模型了。他们通常会训练一个简单的分类器，用模型某一层的输出来预测某个语言学属性。如果能预测得准，就说明这一层包含了相应的信息。\n\n但这些工作有两个局限：\n1.  **零散化**：大多数研究只关注一两个任务，比如只看句法或者只看词性。没有人把整个经典的NLP流水线串起来，系统地看一看。\n2.  **方法单一**：通常只看单一层，或者简单地把所有层平均一下。但信息可能是分布在多个层里的，而且不同层的重要性也不同。\n\n我们需要一个更系统、更精细的“探查工具箱”。\n\n### 3. 我们的方法：如何“探查”BERT的每一层\n\n我们的方法很简单：我们选择了代表经典流水线中各个核心步骤的八个任务（词性、成分、依存关系、实体、语义角色、指代消解等），然后设计了两种互补的度量方式，来衡量这些任务的信息主要分布在BERT的哪些层。\n\n为了做到这一点，我们首先需要一种方法来汇集所有层的信息。我们不能只看某一层，因为信息可能是协同分布的。\n\n**(作者心声：)**\n\u003e 这里我们借鉴了ELMo模型的思想。ELMo已经证明，将不同层的表示加权求和，比只用顶层效果更好。我们想，这个“权重”本身不就是模型在告诉我们，它觉得哪些层对于当前任务更重要吗？这简直是为我们量身定做的工具！\n\n于是，第一个关键方程自然而然地出现了。对于一个任务T，我们要把BERT每一层（从第0层到第L层）对某个词`i`的输出向量`h_i^(l)`，通过一个可学习的权重`s_l`，加权求和起来，得到一个融合后的表示`h_{i,T}`。\n\n$$\nh_{i,T} \u003d \\gamma_T \\sum_{l\u003d0}^{L} s_l^{(l)} h_i^{(l)}\n$$\n\n其中，`s_l`是通过softmax函数计算得到的，保证所有层的权重加起来等于1。`γ_T`是一个全局缩放因子。在为某个任务T训练探查分类器时，我们会同时学习这些`s_l`权重。训练结束后，这些`s_l`就成了一张“热力图”，告诉我们模型为了解决这个任务，最“关注”哪些层。\n\n有了这个权重分布`s`，我们想用一个单一的数值来概括它。一个很自然的想法就是计算这个分布的“重心”（Center of Gravity）。\n\n$$\nE_s[l] \u003d \\sum_{l\u003d0}^{L} l \\cdot s_T^{(l)}\n$$\n\n这个`E_s[l]`值越大，就说明解决这个任务所需要的信息，其“重心”越偏向于BERT的高层。\n\n**但是，** 这个方法也有个问题。它衡量的是模型“认为”哪些层最有用，这是一种“综合评估”。我们还想知道另一个问题：**每一层到底新贡献了多少“解决问题”的能力？** 比如，一个问题是不是在第5层就已经被解决了？\n\n**(作者心声：)**\n\u003e 这就像团队合作。上面的方法是“项目结束后，你问每个成员，觉得谁的贡献最大？”。现在我们想换个问法：“项目从只有成员1开始，然后加入成员2，再加入成员3……每加入一个人，项目进度能推进多少？” 这是一种增量式的、更客观的评估。\n\n为了实现这个想法，我们训练了一系列的探查器。第一个分类器`P^(0)`只能看到第0层（词嵌入层）的信息。第二个`P^(1)`能看到第0层和第1层。以此类推，`P^(l)`能看到从第0层到第`l`层的所有信息。\n\n然后，我们定义了“微分得分”（Differential Score），也就是第`l`层带来的F1分数提升值：\n\n$$\n\\Delta^{(l)} \u003d \\text{Score}(P^{(l)}) - \\text{Score}(P^{(l-1)})\n$$\n\n这个`Δ^(l)`直接衡量了第`l`层带来的边际效益。`Δ^(l)`越高，说明第`l`层为解决这个任务提供了越多新的、关键的信息。\n\n同样，我们可以计算这些`Δ`值的“期望层数”（Expected Layer），来总结一个任务主要是在模型的哪个阶段被解决的。\n\n$$\nE_\\Delta[l] \u003d \\frac{\\sum_{l\u003d1}^{L} l \\cdot \\Delta^{(l)}}{\\sum_{l\u003d1}^{L} \\Delta^{(l)}}\n$$\n\n这个公式计算了F1分数提升的加权平均层数。\n\n有了`E_s[l]`（模型自认为的重心）和`E_Δ[l]`（实际性能提升的重心）这两个工具，我们就可以系统地解剖BERT了。\n\n### 4. 惊人的发现：BERT重现了经典流水线\n\n当我们把所有任务的结果画出来时（可以参考论文中的图1和图2），一幅清晰的画卷展现在我们面前：\n\n\n\n*   **词性标注 (POS)** 的信息重心最靠前，主要集中在底层。\n*   **句法成分 (Consts.) 和依存关系 (Deps.)** 等句法信息，重心居中。\n*   **命名实体 (Entities)、语义角色 (SRL) 和指代消解 (Coref.)** 这些复杂的语义信息，重心都在高层。\n\n这个顺序，**和经典的NLP流水线惊人地一致！**\n\n**(作者心声：)**\n\u003e 看到这张图的时候，我们整个团队都非常激动。这感觉就像是天文学家用新的射电望远镜，在宇宙深处发现了一个早已被理论物理学家预言过的天体。它证明了BERT这个“黑盒子”内部并非一片混沌，而是遵循着一种深刻的、符合人类认知的语言处理逻辑。它不是在走“歪门邪道”，而是在用自己的方式，重走了前辈们走过的路。\n\n更有趣的是，我们还做了单一样例的分析。我们发现BERT的“流水线”不是僵化的，而是**动态和灵活的**。比如在一个句子中，“Toronto”一开始被底层网络理解为地名（GPE）。但当高层网络理解了语义，发现“Toronto”是“被击败”的对象时，它会反过来修正底层的判断，认为“Toronto”应该是一个体育队伍（ORG）。\n\n这是传统刚性流水线无法做到的！传统方法一旦在底层犯了错，就会一直错下去。而BERT可以利用高层语义来“纠正”底层的偏差。\n\n### 总结与“记忆卡”\n\n所以，我们的工作通过设计两种互补的探查指标，系统地研究了BERT的24层网络结构。我们发现，BERT在处理语言时，其内部的信息加工层次与经典的NLP流水线高度吻合：**从底层的词法分析，到中层的句法分析，再到高层的语义分析，层次分明，顺序井然。** 更重要的是，这个内置的流水线是灵活的，高层信息可以反过来影响和修正底层的判断。\n\n这给了我们信心，BERT不仅仅是在做模式匹配，它确实在学习和构建一种层级化的语言知识结构。\n\n**记忆卡:**\n\u003e BERT在它的网络结构中，自下而上、由浅入深地重新发现了经典的NLP任务处理流水线。",
+      "role": "model",
+      "finishReason": "STOP",
+      "tokenCount": 2319,
+      "parts": [{
+        "text": "好的，各位同学，大家好。我是Ian Tenney。很高兴今天能和大家分享我们当时做这项工作"
+      }, {
+        "text": "时的一些想法和发现。大家可以把我当成你们的师兄，我们轻松地聊一聊。\n\n想象"
+      }, {
+        "text": "一下，你是一位刚入门的NLP（自然语言处理）研究生。你可能一方面在学习经典的NLP技术，比如怎么"
+      }, {
+        "text": "做分词、词性标注（POS）、句法分析（Parsing）、命名实体识别（NER）等等，这一"
+      }, {
+        "text": "套流程下来，逻辑清晰，每一步都知道在干什么，我们称之为“经典NLP流水线”（Classical NLP Pipeline）。"
+      }, {
+        "text": "另一方面，你又被现在铺天盖地的预训练模型，尤其是BERT，给震撼到了——它像一个黑盒子"
+      }, {
+        "text": "，你把句子丢进去，它就能在各种任务上取得惊人的效果。\n\n这时候你心里肯定会有一个"
+      }, {
+        "text": "巨大的疑问：**BERT这个黑盒子，它到底是怎么理解语言的？它是不是也像我们一样，在脑"
+      }, {
+        "text": "子里默默地执行了一套类似“经典流水线”的流程？还是说，它找到了一条我们完全无法理解"
+      }, {
+        "text": "的“捷径”？**\n\n这就是我们这篇论文想要回答的核心问题。\n\n---\n\n### 1. "
+      }, {
+        "text": "问题的动机：打开BERT的黑盒子\n\n在我们之前，大家对BERT这种模型是又爱又怕。爱"
+      }, {
+        "text": "它效果拔群，怕它完全不可解释。如果它只是一个靠海量数据拟合出来的“统计"
+      }, {
+        "text": "鹦鹉”，那我们很难相信它真正“理解”了语言的结构，也很难在关键应用中信任"
+      }, {
+        "text": "它。\n\n**作者心声：**\n\u003e 说实话，当时我们组里也是这种感觉。BERT横"
+      }, {
+        "text": "空出世，刷新了几乎所有榜单，大家都特别兴奋。但冷静下来后，一种“学术上的"
+      }, {
+        "text": "不安”油然而生。我们感觉自己像是从一个精密的、能看懂图纸的机械工程师，变成"
+      }, {
+        "text": "了一个只会念咒语的魔法师。我们迫切地想知道，这魔法背后到底有没有科学原理。"
+      }, {
+        "text": "\n\n而经典的NLP流水线，是几十年来语言学家和计算机科学家智慧的结晶。它认为，理解"
+      }, {
+        "text": "一个句子需要一个层次化的过程：\n1.  **词法分析 (POS tagging)**：先搞懂每个词"
+      }, {
+        "text": "的词性，比如“爱”是动词，“北京”是名词。\n2.  **句法分析 (Parsing"
+      }, {
+        "text": ")**：再搞懂词与词之间的结构关系，比如哪个是主语，哪个是宾语，形成"
+      }, {
+        "text": "一个语法树。\n3.  **语义分析 (Semantics)**：最后才是在结构的基础上理解深层含义，比如"
+      }, {
+        "text": "谁对谁做了什么（Semantic Roles），谁和谁指的是同一个人（Coreference）。\n\n这个顺序是符合"
+      }, {
+        "text": "直觉的，从简单到复杂，从局部到整体。那么，BERT那几十层的网络结构，会不会"
+      }, {
+        "text": "也对应着这个过程呢？比如，底层网络负责简单的词法，中层负责句法，高层负责复杂的"
+      }, {
+        "text": "语义？\n\n这就是我们的核心猜想。\n\n### 2. 已有方法的不足\n\n当时已经有一些工作在"
+      }, {
+        "text": "“探查”（probe）这些大模型了。他们通常会训练一个简单的分类器，用模型某一层的输"
+      }, {
+        "text": "出来预测某个语言学属性。如果能预测得准，就说明这一层包含了相应的信息。\n\n但这些工作"
+      }, {
+        "text": "有两个局限：\n1.  **零散化**：大多数研究只关注一两个任务，比如只"
+      }, {
+        "text": "看句法或者只看词性。没有人把整个经典的NLP流水线串起来，系统地看一看。\n"
+      }, {
+        "text": "2.  **方法单一**：通常只看单一层，或者简单地把所有层平均一下。但信息"
+      }, {
+        "text": "可能是分布在多个层里的，而且不同层的重要性也不同。\n\n我们需要一个更系统、更精细的“探"
+      }, {
+        "text": "查工具箱”。\n\n### 3. 我们的方法：如何“探查”BERT的每一层\n\n我们的方法"
+      }, {
+        "text": "很简单：我们选择了代表经典流水线中各个核心步骤的八个任务（词性、成分、依存关系"
+      }, {
+        "text": "、实体、语义角色、指代消解等），然后设计了两种互补的度量方式，来衡量这些"
+      }, {
+        "text": "任务的信息主要分布在BERT的哪些层。\n\n为了做到这一点，我们首先需要一种方法来汇集所有"
+      }, {
+        "text": "层的信息。我们不能只看某一层，因为信息可能是协同分布的。\n\n**(作者心声：)**\n\u003e 这里"
+      }, {
+        "text": "我们借鉴了ELMo模型的思想。ELMo已经证明，将不同层的表示加权求和，比只"
+      }, {
+        "text": "用顶层效果更好。我们想，这个“权重”本身不就是模型在告诉我们，它觉得哪些层对于"
+      }, {
+        "text": "当前任务更重要吗？这简直是为我们量身定做的工具！\n\n于是，第一个关键方程自然"
+      }, {
+        "text": "而然地出现了。对于一个任务T，我们要把BERT每一层（从第0层到第L层）对"
+      }, {
+        "text": "某个词`i`的输出向量`h_i^(l)`，通过一个可学习的权重`s_l"
+      }, {
+        "text": "`，加权求和起来，得到一个融合后的表示`h_{i,T}`。\n\n$$\nh_{i"
+      }, {
+        "text": ",T} \u003d \\gamma_T \\sum_{l\u003d0}^{L} s_l^{(l)} h"
+      }, {
+        "text": "_i^{(l)}\n$$\n\n其中，`s_l`是通过softmax函数计算得到的，保证所有层的"
+      }, {
+        "text": "权重加起来等于1。`γ_T`是一个全局缩放因子。在为某个任务T训练探"
+      }, {
+        "text": "查分类器时，我们会同时学习这些`s_l`权重。训练结束后，这些`s_l"
+      }, {
+        "text": "`就成了一张“热力图”，告诉我们模型为了解决这个任务，最“关注”哪些层"
+      }, {
+        "text": "。\n\n有了这个权重分布`s`，我们想用一个单一的数值来概括它。一个很自然的想法"
+      }, {
+        "text": "就是计算这个分布的“重心”（Center of Gravity）。\n\n$$\nE_s[l] \u003d \\sum"
+      }, {
+        "text": "_{l\u003d0}^{L} l \\cdot s_T^{(l)}\n$$\n\n这个`E_s[l]`值越大，就说明解决这个任务所需要的信息，其“重心”越偏向于BERT的高层。\n\n"
+      }, {
+        "text": "**但是，** 这个方法也有个问题。它衡量的是模型“认为”哪些层最有用，这是一种“综合"
+      }, {
+        "text": "评估”。我们还想知道另一个问题：**每一层到底新贡献了多少“解决问题”的能力？**"
+      }, {
+        "text": " 比如，一个问题是不是在第5层就已经被解决了？\n\n**(作者心声：)**\n\u003e 这"
+      }, {
+        "text": "就像团队合作。上面的方法是“项目结束后，你问每个成员，觉得谁的贡献最大？”。现在我们"
+      }, {
+        "text": "想换个问法：“项目从只有成员1开始，然后加入成员2，再加入成员3……每"
+      }, {
+        "text": "加入一个人，项目进度能推进多少？” 这是一种增量式的、更客观的评估。\n\n为了实现这个想法"
+      }, {
+        "text": "，我们训练了一系列的探查器。第一个分类器`P^(0)`只能看到第0层（词"
+      }, {
+        "text": "嵌入层）的信息。第二个`P^(1)`能看到第0层和第1层。以此类推，"
+      }, {
+        "text": "`P^(l)`能看到从第0层到第`l`层的所有信息。\n\n然后，我们定义"
+      }, {
+        "text": "了“微分得分”（Differential Score），也就是第`l`层带来的F1分数提升值：\n\n$$\n"
+      }, {
+        "text": "\\Delta^{(l)} \u003d \\text{Score}(P^{(l)}) - \\text{Score}(P^{(l"
+      }, {
+        "text": "-1)})\n$$\n\n这个`Δ^(l)`直接衡量了第`l`层带来的边际效益"
+      }, {
+        "text": "。`Δ^(l)`越高，说明第`l`层为解决这个任务提供了越多新的、关键的信息"
+      }, {
+        "text": "。\n\n同样，我们可以计算这些`Δ`值的“期望层数”（Expected Layer），来总结一个任务主要"
+      }, {
+        "text": "是在模型的哪个阶段被解决的。\n\n$$\nE_\\Delta[l] \u003d \\frac{\\sum_{l"
+      }, {
+        "text": "\u003d1}^{L} l \\cdot \\Delta^{(l)}}{\\sum_{l\u003d1}^{L} \\Delta^{("
+      }, {
+        "text": "l)}}\n$$\n\n这个公式计算了F1分数提升的加权平均层数。\n\n有了`E_s[l]`（模型自认为的重心）和`E_Δ[l]`（实际性能提升的重心）这两个工具"
+      }, {
+        "text": "，我们就可以系统地解剖BERT了。\n\n### 4. 惊人的发现：BERT重现了"
+      }, {
+        "text": "经典流水线\n\n当我们把所有任务的结果画出来时（可以参考论文中的图1和图2），一"
+      }, {
+        "text": "幅清晰的画卷展现在我们面前：\n\n"
+      }, {
+        "text": "\n\n*   **词性标注 (POS)** 的信息重心"
+      }, {
+        "text": "最靠前，主要集中在底层。\n*   **句法成分 (Consts.) 和依存关系 (Deps"
+      }, {
+        "text": ".)** 等句法信息，重心居中。\n*   **命名实体 (Entities)、语义角色 (SR"
+      }, {
+        "text": "L) 和指代消解 (Coref.)** 这些复杂的语义信息，重心都在高层。\n\n这个顺序"
+      }, {
+        "text": "，**和经典的NLP流水线惊人地一致！**\n\n**(作者心声：)**\n\u003e 看到这张"
+      }, {
+        "text": "图的时候，我们整个团队都非常激动。这感觉就像是天文学家用新的射电望远镜，"
+      }, {
+        "text": "在宇宙深处发现了一个早已被理论物理学家预言过的天体。它证明了BERT这个“黑盒子”"
+      }, {
+        "text": "内部并非一片混沌，而是遵循着一种深刻的、符合人类认知的语言处理逻辑。它不是在走"
+      }, {
+        "text": "“歪门邪道”，而是在用自己的方式，重走了前辈们走过的路。\n\n更有趣的是，我们"
+      }, {
+        "text": "还做了单一样例的分析。我们发现BERT的“流水线”不是僵化的，而是**动态和"
+      }, {
+        "text": "灵活的**。比如在一个句子中，“Toronto”一开始被底层网络理解为地名（GPE）。但当"
+      }, {
+        "text": "高层网络理解了语义，发现“Toronto”是“被击败”的对象时，它会反过来"
+      }, {
+        "text": "修正底层的判断，认为“Toronto”应该是一个体育队伍（ORG）。\n\n这是传统刚性流水线无法"
+      }, {
+        "text": "做到的！传统方法一旦在底层犯了错，就会一直错下去。而BERT可以利用高层语义"
+      }, {
+        "text": "来“纠正”底层的偏差。\n\n### 总结与“记忆卡”\n\n所以，我们的工作通过"
+      }, {
+        "text": "设计两种互补的探查指标，系统地研究了BERT的24层网络结构。我们发现，BERT在处理"
+      }, {
+        "text": "语言时，其内部的信息加工层次与经典的NLP流水线高度吻合：**从底层的词法分析"
+      }, {
+        "text": "，到中层的句法分析，再到高层的语义分析，层次分明，顺序井然。** 更"
+      }, {
+        "text": "重要的是，这个内置的流水线是灵活的，高层信息可以反过来影响和修正底层的判断。"
+      }, {
+        "text": "\n\n这给了我们信心，BERT不仅仅是在做模式匹配，它确实在学习和构建一种层级化的语言知识结构"
+      }, {
+        "text": "。\n\n**记忆卡:**\n\u003e BERT在它的网络结构中，自下而上、由浅入深地重新"
+      }, {
+        "text": "发现了经典的NLP任务处理流水线。"
+      }]
+    }, {
+      "driveDocument": {
+        "id": "16Bbd8jCYUgrJhdumJQhoCqj8EsfbZTSZ"
+      },
+      "role": "user",
+      "tokenCount": 2581
+    }, {
+      "text": "**Clarifying the Core Idea**\n\nI\u0027ve been breaking down \"Axiomatic Attribution for Deep Networks\" using the Feynman Technique. My aim is to explain it in simple terms, using analogies to make the concepts clear for someone new to the field. I\u0027m focusing on clarifying the fundamental principles and how they relate to real-world applications of deep learning. This process involves identifying key concepts and breaking them down into simpler, understandable components.\n\n\n**Expanding the Explanations**\n\nI\u0027m now focusing on the \"How Each Key Equation Naturally Emerges\" part. My goal is to derive the math from the research\u0027s logic and identified problems, not just present equations. I\u0027m aiming to showcase the thought process behind each step, making the explanation more intuitive. This involves finding the right balance between plain language and technical precision, ensuring a clear and natural flow for the reader.\n\n\n**Analyzing the Approach**\n\nI\u0027m now outlining a detailed approach to explain the paper, breaking it down into distinct sections to help a new graduate student understand it. My plan involves using the Feynman Technique, adopting the persona of the paper\u0027s first author, and focusing on clear, natural language. I\u0027m especially eager to highlight the thought process behind each key equation, not just presenting the formulas, and I plan to end with a concise summary of the core idea. I am also planning on including the use of LaTeX for mathematical notation.\n\n\n**Structuring the Narrative**\n\nI\u0027ve been mapping out the paper\u0027s structure, focusing on a clear, narrative flow. I\u0027m building it around the \"why,\" \"what\u0027s wrong,\" and \"how it works\" framework, following the Feynman Technique. The use of a clear narrative and plain language is a priority, as is making the thought process behind each equation explicit.\n\n\n**Defining the Dilemma**\n\nI\u0027m now zeroing in on the core of the problem. My goal is to clearly articulate the existing limitations with methods like gradients and DeepLIFT, focusing on sensitivity versus implementation invariance. I am trying to demonstrate the thought process behind each key equation. I am making sure the language is precise, but accessible, as I continue to adopt the persona of the paper\u0027s first author.\n\n\n**Developing the Path Integral**\n\nI\u0027m exploring the core idea of a path integral for attribution.  We\u0027re addressing the sensitivity issue by summing gradients across the input path, as opposed to taking just the derivative at a point. I\u0027m focusing on why this method allows for better gradient analysis and how it provides more context when assigning attribution.\n\nI have been outlining how the path integral helps overcome the issues, but I\u0027m still working on making the explanation precise, but accessible.  I aim to present the mathematical derivation as naturally as possible.\n\n\n**Exploring Path Integrals**\n\nAfter defining the dilemma, I\u0027ve shifted my focus to how path integrals are central to axiomatic attribution. They help us integrate the gradients along a path from the baseline, which addresses the sensitivity problems of standard gradients. The goal is to articulate the method\u0027s mathematical foundation by presenting it as a natural progression. I\u0027m aiming to connect the path integral formula to the challenges with gradients and demonstrate how our approach naturally solves those.\n\n\n**Unveiling the Dilemma**\n\nI\u0027m now zeroing in on the core challenge: the tension between sensitivity and implementation invariance. Methods like gradients, while implementation-invariant, can fail to capture significant changes, particularly in the presence of saturation. I\u0027m carefully articulating the thought process behind each key equation, ensuring precision while staying accessible, and keeping my persona as the paper\u0027s first author.\n\n\n**Unpacking the Black Box**\n\nI\u0027ve been digging into the core issue: the opacity of deep neural networks. Methods like simple gradients struggle to capture sensitivity, but are implementation invariant. After careful examination, I believe that the path integral approach of the paper offers a better, more nuanced look at this problem, but I need to make sure the explanation is clear.\n\n\n**Integrating Gradients Along Paths**\n\nI\u0027ve been looking at how Integrated Gradients addresses sensitivity concerns with gradients. The key insight is that integrating along a path from the baseline provides a more complete understanding of feature contributions. This approach, built upon gradients, maintains implementation invariance while achieving sensitivity. The mathematical derivation highlights the power of path integrals in capturing nuanced feature attributions.\n\n\n",
+      "role": "model",
+      "tokenCount": 2414,
+      "isThought": true,
+      "thinkingBudget": -1,
+      "parts": [{
+        "text": "**Clarifying the Core Idea**\n\nI\u0027ve been breaking down \"Axiomatic Attribution for Deep Networks\" using the Feynman Technique. My aim is to explain it in simple terms, using analogies to make the concepts clear for someone new to the field. I\u0027m focusing on clarifying the fundamental principles and how they relate to real-world applications of deep learning. This process involves identifying key concepts and breaking them down into simpler, understandable components.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Expanding the Explanations**\n\nI\u0027m now focusing on the \"How Each Key Equation Naturally Emerges\" part. My goal is to derive the math from the research\u0027s logic and identified problems, not just present equations. I\u0027m aiming to showcase the thought process behind each step, making the explanation more intuitive. This involves finding the right balance between plain language and technical precision, ensuring a clear and natural flow for the reader.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Analyzing the Approach**\n\nI\u0027m now outlining a detailed approach to explain the paper, breaking it down into distinct sections to help a new graduate student understand it. My plan involves using the Feynman Technique, adopting the persona of the paper\u0027s first author, and focusing on clear, natural language. I\u0027m especially eager to highlight the thought process behind each key equation, not just presenting the formulas, and I plan to end with a concise summary of the core idea. I am also planning on including the use of LaTeX for mathematical notation.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Structuring the Narrative**\n\nI\u0027ve been mapping out the paper\u0027s structure, focusing on a clear, narrative flow. I\u0027m building it around the \"why,\" \"what\u0027s wrong,\" and \"how it works\" framework, following the Feynman Technique. The use of a clear narrative and plain language is a priority, as is making the thought process behind each equation explicit.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Defining the Dilemma**\n\nI\u0027m now zeroing in on the core of the problem. My goal is to clearly articulate the existing limitations with methods like gradients and DeepLIFT, focusing on sensitivity versus implementation invariance. I am trying to demonstrate the thought process behind each key equation. I am making sure the language is precise, but accessible, as I continue to adopt the persona of the paper\u0027s first author.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Developing the Path Integral**\n\nI\u0027m exploring the core idea of a path integral for attribution.  We\u0027re addressing the sensitivity issue by summing gradients across the input path, as opposed to taking just the derivative at a point. I\u0027m focusing on why this method allows for better gradient analysis and how it provides more context when assigning attribution.\n\nI have been outlining how the path integral helps overcome the issues, but I\u0027m still working on making the explanation precise, but accessible.  I aim to present the mathematical derivation as naturally as possible.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Exploring Path Integrals**\n\nAfter defining the dilemma, I\u0027ve shifted my focus to how path integrals are central to axiomatic attribution. They help us integrate the gradients along a path from the baseline, which addresses the sensitivity problems of standard gradients. The goal is to articulate the method\u0027s mathematical foundation by presenting it as a natural progression. I\u0027m aiming to connect the path integral formula to the challenges with gradients and demonstrate how our approach naturally solves those.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Unveiling the Dilemma**\n\nI\u0027m now zeroing in on the core challenge: the tension between sensitivity and implementation invariance. Methods like gradients, while implementation-invariant, can fail to capture significant changes, particularly in the presence of saturation. I\u0027m carefully articulating the thought process behind each key equation, ensuring precision while staying accessible, and keeping my persona as the paper\u0027s first author.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Unpacking the Black Box**\n\nI\u0027ve been digging into the core issue: the opacity of deep neural networks. Methods like simple gradients struggle to capture sensitivity, but are implementation invariant. After careful examination, I believe that the path integral approach of the paper offers a better, more nuanced look at this problem, but I need to make sure the explanation is clear.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Integrating Gradients Along Paths**\n\nI\u0027ve been looking at how Integrated Gradients addresses sensitivity concerns with gradients. The key insight is that integrating along a path from the baseline provides a more complete understanding of feature contributions. This approach, built upon gradients, maintains implementation invariance while achieving sensitivity. The mathematical derivation highlights the power of path integrals in capturing nuanced feature attributions.\n\n\n",
+        "thought": true
+      }]
+    }, {
+      "text": "好的，各位同学，大家好。我是Mukund Sundararajan，很高兴能以第一作者的身份，和大家聊聊我们当年做的这项工作——“Integrated Gradients”。大家可以把我当成你们的师兄，我们不讲官话，只聊最核心的想法。\n\n---\n\n### 1. 问题的动机：为什么我的模型说这是一只猫？\n\n想象一下，你训练了一个最先进的深度学习模型，它能以99%的准确率识别图片。你给它一张猫的图片，它自信地输出“猫”。太棒了！但这时，你的老板或者一个医生（如果这是个医疗诊断模型）问你：“**模型是根据图片的哪些部分，才做出‘猫’这个判断的？是猫的胡须？耳朵？还是背景里的沙发？**”\n\n这个问题就是“归因”（Attribution）问题。我们想把模型的预测结果，“归功”或者“归咎”到输入的每一个特征上。对于图片，就是每个像素；对于文本，就是每个词。\n\n这个问题至关重要。如果我们不知道模型在看哪里，我们就无法信任它。一个医疗影像模型如果把诊断依据放在了图片角落的伪影上，那它再准我们也不敢用。所以，我们需要一个可靠的方法来解释模型的决策。\n\n**(作者心声：)**\n\u003e 当时我们团队内部也充满了这种困惑。模型越来越复杂，效果越来越好，但我们感觉自己离“理解”它越来越远。我们就像一群只会开飞机的飞行员，却完全不懂飞机的引擎是怎么工作的。一旦飞机出问题，我们只能束手无策。这种感觉非常糟糕，我们迫切需要一套“诊断工具”。\n\n### 2. 已有方法的不足：看似合理，实则有坑\n\n在我们之前，已经有很多聪明人尝试解决这个问题了。最流行的方法大致有两派：\n\n**第一派是“梯度派” (Gradients)。** 想法非常直观：一个像素的重要性，不就是模型的“猫”分数对这个像素的梯度（gradient）吗？梯度越大，说明这个像素稍微一变，分数就跟着大变，那它肯定很重要。\n\n但这方法有个致命缺陷：**饱和（Saturation）问题**。想象一个简单的ReLU激活函数 `f(x) \u003d max(0, x)`。当输入`x`从0变到-10时，输出从0变成了0，但`f(x)`在整个负数区间的梯度都是0！也就是说，虽然输入变化巨大，但梯度可能为0，导致归因失败。模型会告诉你那些明明起了作用的特征“不重要”。这违背了我们的直觉。我们把这个直觉提炼成第一条公理：\n\n*   **公理1: 敏感性 (Sensitivity)**：如果一个输入特征的改变，导致了模型输出的改变，那么这个特征的归因值**不能**为零。\n\n显然，简单的梯度法不满足这个公理。\n\n**第二派是“信号传播派” (Methods like DeepLIFT, LRP)。** 他们意识到了梯度的问题，于是设计了更复杂的规则，来模拟“信号”或“重要性”如何在网络中从输出层反向传播回输入层。他们引入了“基线”（baseline）的概念（比如一张全黑的图片），通过比较实际输入和基线的差异来归因。这种方法通常能解决“饱和”问题。\n\n但他们又引入了一个更隐蔽的问题。想象一下，我有两个神经网络，它们的数学函数**完全等价**，比如一个网络用`ReLU(x)`，另一个用`ReLU(x) + 5 - 5`。对于任何输入，它们的输出都一模一样。那么，对于同一张图片，它们的归因结果也应该一模一样，对吧？因为归因应该只和模型的**功能**有关，而和它的具体**实现代码**无关。\n\n然而，DeepLIFT这类方法，由于它们依赖于网络内部的具体结构和传播规则，可能会给这两个功能等价的网络不同的归因结果。这太荒谬了！我们把这个要求提炼成第二条公理：\n\n*   **公理2: 实现无关性 (Implementation Invariance)**：如果两个网络实现了完全相同的数学函数，那么它们的归因结果必须完全相同。\n\n有趣的是，简单的梯度法恰好满足这一条（因为链式法则本身就是实现无关的）。\n\n**(作者心声：)**\n\u003e 当我们发现这一点时，感觉就像找到了问题的关键。我们面临一个两难的困境：梯度法满足“实现无关性”但不满足“敏感性”；而DeepLIFT这类方法满足“敏感性”却不满足“实现无关性”。我们当时就想，有没有一种方法，能同时拥有这两个优点呢？\n\n### 3. 我们的方法：从公理到“积分梯度”\n\n我们的核心思想就是：**能不能从这两条公理出发，直接推导出一种完美的归因方法？**\n\n我们先回顾一下梯度法为什么会失败。因为它只看了输入点 `x` **那一个点**的梯度，所以会“一叶障目”。那如果我们不只看终点，而是看**从起点（基线 `x\u0027`）到终点（输入 `x`）的整条路径**呢？\n\n想象一下，我们从一张全黑的图片（基线 `x\u0027`）开始，一点一点地“调亮”像素，直到它变成我们真正的输入图片 `x`。这条从 `x\u0027` 到 `x` 的直线路径上，有无数个中间状态的图片。在每一步，我们都计算一下梯度。\n\n*   即使在终点 `x`，梯度可能是0（饱和了）。\n*   但在路径的中间某个点，梯度很可能不是0！\n\n**(作者心声：)**\n\u003e 这就是我们的“Aha!”时刻。问题的解法可能不是设计更复杂的传播规则，而是回归到最基础的微积分。一个物体的总位移，等于它在路径上每一点速度的累加（积分）。类似地，一个特征的总贡献，也应该是它在从基线到输入的整条路径上所有“局部贡献”（梯度）的累加！\n\n这个想法，就是**积分梯度 (Integrated Gradients)**。\n\n我们用数学语言来描述这个过程。从基线 `x\u0027` 到输入 `x` 的直线路径可以表示为 `x\u0027 + α(x - x\u0027)`，其中 `α` 从0变化到1。我们要做的，就是把网络 `F` 的梯度 `∂F/∂x_i` 沿着这条路径进行积分。\n\n于是，第 `i` 个特征的积分梯度归因值就自然地定义为：\n\n$$\n\\text{IntegratedGrads}_i(x) ::\u003d (x_i - x\u0027_i) \\times \\int_{\\alpha\u003d0}^{1} \\frac{\\partial F(x\u0027 + \\alpha(x-x\u0027))}{\\partial x_i} \\, d\\alpha\n$$\n\n这个公式看起来复杂，但它有几个极其优美的性质：\n1.  它满足**敏感性**，因为只要 `F(x)` 和 `F(x\u0027)` 不同，积分的结果就不会处处为零。\n2.  它满足**实现无关性**，因为它完全是基于梯度构建的。\n3.  它还带来了一个我们一开始没奢望的、但非常棒的性质，叫做**完备性 (Completeness)**。根据微积分基本定理，上面这个积分的结果，保证了所有特征的归因值加起来，不多不少，正好等于模型在输入 `x` 和基线 `x\u0027` 上的输出之差： `Σ_i IntegratedGrads_i(x) \u003d F(x) - F(x\u0027)`。这意味着我们的归因是“守恒”的，没有凭空产生或消失的重要性。\n\n最后，这个积分在实际中怎么计算呢？我们不需要真的解积分，可以用黎曼和来近似。也就是，我们在路径上取 `m` 个离散的点，把这些点的梯度加起来再平均。\n\n$$\n\\text{IntegratedGrads}_i^{\\text{approx}}(x) ::\u003d (x_i - x\u0027_i) \\times \\sum_{k\u003d1}^{m} \\frac{1}{m} \\frac{\\partial F(x\u0027 + \\frac{k}{m}(x-x\u0027))}{\\partial x_i}\n$$\n\n这个求和公式实现起来极其简单，只需要一个循环，在每次循环里调用标准的梯度计算函数即可。\n\n### 总结与“记忆卡”\n\n所以，我们的整个工作，就是从两条我们认为归因方法必须遵守的基本公理（敏感性和实现无关性）出发，发现现有方法都有缺陷。然后，受这些公理的启发，我们提出了一个回归微积分本源的方法——积分梯度。它通过对输入特征从一个“中性”基线到实际值的路径上的所有梯度进行积分，来计算该特征的总贡献。这个方法不仅同时满足了我们提出的公理，而且实现简单、理论坚实，并具有“完备性”这一优美的数学性质。\n\n**记忆卡:**\n\u003e 积分梯度通过累加从“基线”到“输入”这条直线上所有点的梯度，来计算每个输入特征对模型最终预测的贡献度。",
+      "role": "model",
+      "finishReason": "STOP",
+      "tokenCount": 2025,
+      "parts": [{
+        "text": "好的，各位同学，大家好。我是Mukund Sundararajan，很高兴能以第一作者的身份，和大家聊"
+      }, {
+        "text": "聊我们当年做的这项工作——“Integrated Gradients”。大家可以把我当成你们的师兄，我们不"
+      }, {
+        "text": "讲官话，只聊最核心的想法。\n\n---\n\n### 1. 问题的动机：为什么我的模型"
+      }, {
+        "text": "说这是一只猫？\n\n想象一下，你训练了一个最先进的深度学习模型，它能以99%的准确"
+      }, {
+        "text": "率识别图片。你给它一张猫的图片，它自信地输出“猫”。太棒了！但"
+      }, {
+        "text": "这时，你的老板或者一个医生（如果这是个医疗诊断模型）问你：“**模型是根据图片的哪些部分，"
+      }, {
+        "text": "才做出‘猫’这个判断的？是猫的胡须？耳朵？还是背景里的沙发？**”\n\n"
+      }, {
+        "text": "这个问题就是“归因”（Attribution）问题。我们想把模型的预测结果，“归功”或者“归咎"
+      }, {
+        "text": "”到输入的每一个特征上。对于图片，就是每个像素；对于文本，就是每个词。\n\n这个问题至"
+      }, {
+        "text": "关重要。如果我们不知道模型在看哪里，我们就无法信任它。一个医疗影像模型如果把诊断依据放在"
+      }, {
+        "text": "了图片角落的伪影上，那它再准我们也不敢用。所以，我们需要一个可靠的方法来解释模型的"
+      }, {
+        "text": "决策。\n\n**(作者心声：)**\n\u003e 当时我们团队内部也充满了这种困惑。模型越来越"
+      }, {
+        "text": "复杂，效果越来越好，但我们感觉自己离“理解”它越来越远。我们就像一群只会开飞"
+      }, {
+        "text": "机的飞行员，却完全不懂飞机的引擎是怎么工作的。一旦飞机出问题，我们只能束手无策。这种"
+      }, {
+        "text": "感觉非常糟糕，我们迫切需要一套“诊断工具”。\n\n### 2. 已有方法的不足：看似"
+      }, {
+        "text": "合理，实则有坑\n\n在我们之前，已经有很多聪明人尝试解决这个问题了。最流行的方法大致有"
+      }, {
+        "text": "两派：\n\n**第一派是“梯度派” (Gradients)。** 想法非常直观："
+      }, {
+        "text": "一个像素的重要性，不就是模型的“猫”分数对这个像素的梯度（gradient）吗？梯度越大，说明"
+      }, {
+        "text": "这个像素稍微一变，分数就跟着大变，那它肯定很重要。\n\n但这方法有个致命缺陷：**饱和（"
+      }, {
+        "text": "Saturation）问题**。想象一个简单的ReLU激活函数 `f(x) \u003d max(0, x)`。当"
+      }, {
+        "text": "输入`x`从0变到-10时，输出从0变成了0，但`f(x)"
+      }, {
+        "text": "`在整个负数区间的梯度都是0！也就是说，虽然输入变化巨大，但梯度可能为0，导致"
+      }, {
+        "text": "归因失败。模型会告诉你那些明明起了作用的特征“不重要”。这违背了我们的直觉。"
+      }, {
+        "text": "我们把这个直觉提炼成第一条公理：\n\n*   **公理1: 敏感性"
+      }, {
+        "text": " (Sensitivity)**：如果一个输入特征的改变，导致了模型输出的改变，那么这个特征的归因值"
+      }, {
+        "text": "**不能**为零。\n\n显然，简单的梯度法不满足这个公理。\n\n**第二派是“信号"
+      }, {
+        "text": "传播派” (Methods like DeepLIFT, LRP)。** 他们意识到了梯度的问题，于是设计了更复杂的规则，"
+      }, {
+        "text": "来模拟“信号”或“重要性”如何在网络中从输出层反向传播回输入层。他们"
+      }, {
+        "text": "引入了“基线”（baseline）的概念（比如一张全黑的图片），通过比较实际输入和基线的"
+      }, {
+        "text": "差异来归因。这种方法通常能解决“饱和”问题。\n\n但他们又引入了一个更隐蔽的问题。想象"
+      }, {
+        "text": "一下，我有两个神经网络，它们的数学函数**完全等价**，比如一个网络用`ReLU(x)"
+      }, {
+        "text": "`，另一个用`ReLU(x) + 5 - 5`。对于任何输入，它们的输出都一"
+      }, {
+        "text": "模一样。那么，对于同一张图片，它们的归因结果也应该一模一样，对吧？因为归因应该"
+      }, {
+        "text": "只和模型的**功能**有关，而和它的具体**实现代码**无关。\n\n然而，DeepLIFT这类"
+      }, {
+        "text": "方法，由于它们依赖于网络内部的具体结构和传播规则，可能会给这两个功能等价的网络不同的归因结果。"
+      }, {
+        "text": "这太荒谬了！我们把这个要求提炼成第二条公理：\n\n*   **公理2:"
+      }, {
+        "text": " 实现无关性 (Implementation Invariance)**：如果两个网络实现了完全相同的数学函数，那么它们的归因结果必须"
+      }, {
+        "text": "完全相同。\n\n有趣的是，简单的梯度法恰好满足这一条（因为链式法则本身就是实现无关的"
+      }, {
+        "text": "）。\n\n**(作者心声：)**\n\u003e 当我们发现这一点时，感觉就像找到了问题的关键。我们面临"
+      }, {
+        "text": "一个两难的困境：梯度法满足“实现无关性”但不满足“敏感性”；而DeepLIFT这类"
+      }, {
+        "text": "方法满足“敏感性”却不满足“实现无关性”。我们当时就想，有没有一种方法，能"
+      }, {
+        "text": "同时拥有这两个优点呢？\n\n### 3. 我们的方法：从公理到“积分梯度”\n\n我们的"
+      }, {
+        "text": "核心思想就是：**能不能从这两条公理出发，直接推导出一种完美的归因方法？**\n\n我们"
+      }, {
+        "text": "先回顾一下梯度法为什么会失败。因为它只看了输入点 `x` **那一个点**的梯度"
+      }, {
+        "text": "，所以会“一叶障目”。那如果我们不只看终点，而是看**从起点（基线 "
+      }, {
+        "text": "`x\u0027`）到终点（输入 `x`）的整条路径**呢？\n\n想象一下，我们从"
+      }, {
+        "text": "一张全黑的图片（基线 `x\u0027`）开始，一点一点地“调亮”像素，直到它变成"
+      }, {
+        "text": "我们真正的输入图片 `x`。这条从 `x\u0027` 到 `x` 的直线路径上，有无数个中间"
+      }, {
+        "text": "状态的图片。在每一步，我们都计算一下梯度。\n\n*   即使在终点 `x`，"
+      }, {
+        "text": "梯度可能是0（饱和了）。\n*   但在路径的中间某个点，梯度很可能不是0！\n\n"
+      }, {
+        "text": "**(作者心声：)**\n\u003e 这就是我们的“Aha!”时刻。问题的解法可能不是设计更"
+      }, {
+        "text": "复杂的传播规则，而是回归到最基础的微积分。一个物体的总位移，等于它在路径"
+      }, {
+        "text": "上每一点速度的累加（积分）。类似地，一个特征的总贡献，也应该是它在从基线到输入的"
+      }, {
+        "text": "整条路径上所有“局部贡献”（梯度）的累加！\n\n这个想法，就是**积分梯度 (Integrated Gradients"
+      }, {
+        "text": ")**。\n\n我们用数学语言来描述这个过程。从基线 `x\u0027` 到输入 `x` 的直线"
+      }, {
+        "text": "路径可以表示为 `x\u0027 + α(x - x\u0027)`，其中 `α` 从0变化到1。我们要"
+      }, {
+        "text": "做的，就是把网络 `F` 的梯度 `∂F/∂x_i` 沿着这条路径进行积分。\n\n于是"
+      }, {
+        "text": "，第 `i` 个特征的积分梯度归因值就自然地定义为：\n\n$$\n\\text{Integrated"
+      }, {
+        "text": "Grads}_i(x) ::\u003d (x_i - x\u0027_i) \\times \\int_{\\alpha\u003d0}^{"
+      }, {
+        "text": "1} \\frac{\\partial F(x\u0027 + \\alpha(x-x\u0027))}{\\partial x_i}"
+      }, {
+        "text": " \\, d\\alpha\n$$\n\n这个公式看起来复杂，但它有几个极其优美的性质：\n1.  它"
+      }, {
+        "text": "满足**敏感性**，因为只要 `F(x)` 和 `F(x\u0027)` 不同，积分的结果"
+      }, {
+        "text": "就不会处处为零。\n2.  它满足**实现无关性**，因为它完全是基于梯度构建"
+      }, {
+        "text": "的。\n3.  它还带来了一个我们一开始没奢望的、但非常棒的性质，叫做**完"
+      }, {
+        "text": "备性 (Completeness)**。根据微积分基本定理，上面这个积分的结果，保证了所有特征的归因值"
+      }, {
+        "text": "加起来，不多不少，正好等于模型在输入 `x` 和基线 `x\u0027` 上的输出之差："
+      }, {
+        "text": " `Σ_i IntegratedGrads_i(x) \u003d F(x) - F(x\u0027)`。这意味着"
+      }, {
+        "text": "我们的归因是“守恒”的，没有凭空产生或消失的重要性。\n\n最后，这个积分在"
+      }, {
+        "text": "实际中怎么计算呢？我们不需要真的解积分，可以用黎曼和来近似。也就是，我们在路径上取 "
+      }, {
+        "text": "`m` 个离散的点，把这些点的梯度加起来再平均。\n\n$$\n\\text{IntegratedGrads}_"
+      }, {
+        "text": "i^{\\text{approx}}(x) ::\u003d (x_i - x\u0027_i) \\times \\sum_{k"
+      }, {
+        "text": "\u003d1}^{m} \\frac{1}{m} \\frac{\\partial F(x\u0027 + \\frac{"
+      }, {
+        "text": "k}{m}(x-x\u0027))}{\\partial x_i}\n$$\n\n这个求和公式实现起来极其"
+      }, {
+        "text": "简单，只需要一个循环，在每次循环里调用标准的梯度计算函数即可。\n\n### 总结与“记忆"
+      }, {
+        "text": "卡”\n\n所以，我们的整个工作，就是从两条我们认为归因方法必须遵守的基本公理（敏感性和"
+      }, {
+        "text": "实现无关性）出发，发现现有方法都有缺陷。然后，受这些公理的启发，我们提出了一个回归"
+      }, {
+        "text": "微积分本源的方法——积分梯度。它通过对输入特征从一个“中性”基线到实际"
+      }, {
+        "text": "值的路径上的所有梯度进行积分，来计算该特征的总贡献。这个方法不仅同时满足了我们提出的公"
+      }, {
+        "text": "理，而且实现简单、理论坚实，并具有“完备性”这一优美的数学性质。\n\n**"
+      }, {
+        "text": "记忆卡:**\n\u003e 积分梯度通过累加从“基线”到“输入”这条直线上所有"
+      }, {
+        "text": "点的梯度，来计算每个输入特征对模型最终预测的贡献度。"
+      }]
+    }, {
+      "driveDocument": {
+        "id": "1hLiaOM-xpGzuHQJ880p71IDdZ_sHa6cX"
+      },
+      "role": "user",
+      "tokenCount": 3613
+    }, {
+      "text": "**Unpacking the Paper**\n\nI\u0027m currently employing the Feynman Technique to thoroughly understand the Causal Mediation Analysis paper. My approach involves simplifying the concepts as though I\u0027m explaining them to a novice, forcing me to identify and address any gaps in my comprehension. This method is proving highly effective in deconstructing the complexities of the paper and ensuring a solid grasp of its core principles.\n\n\n**Analyzing the Equations**\n\nThe Feynman Technique continues to be instrumental in my analysis. I\u0027m now transitioning to scrutinizing the core equations within the paper. I\u0027m focused on deriving them organically, constructing a narrative that mirrors the authors\u0027 thought process. Each variable and term is being dissected, with an emphasis on linking the mathematical expressions back to the underlying causal concepts. \"Author\u0027s inner voice\" helps to reveal the reasoning behind certain choices.\n\n\n**Defining Causal Paths**\n\nI\u0027m now deep into the brainstorming phase, channeling the first author to understand the core motivation: tackling bias in language models. I\u0027ve realized probing classifiers offer correlations, not causation, highlighting the need for a causal framework. The paper\u0027s core idea is taking shape: applying Causal Mediation Analysis to dissect how an input influences the output through an intermediary component within the model. \"Author\u0027s inner voice\" confirms my gut feeling - using CMA is a promising avenue for providing more actionable insight. The problem, as is usual, is to define the exact causal relationships!\n\n\n**Conceptualizing Causal Framework**\n\nI\u0027m now integrating the author\u0027s perspective to concretize the problem and solution. The core issue is the bias in language models, highlighted through scenarios like gendered word associations. Traditional probing reveals correlations, but I\u0027m after causation. My core idea is leveraging Causal Mediation Analysis to dissect input-to-output influence via model components. \"Author\u0027s inner voice\" reinforces the need for precise causal relationships to map the drug-patient analogy to the model\u0027s behavior, where the \u0027freeze\u0027 intervention is key.\n\n\n**Unveiling Causal Paths**\n\nI\u0027m now in a phase of solidifying my understanding of the paper\u0027s overarching goal. The key is applying Causal Mediation Analysis to examine the influence of inputs on outputs through internal model components. I\u0027m focusing on crafting a comprehensive, step-by-step explanation. The goal here is to establish the causal framework, mirroring the paper\u0027s core objective of quantifying the direct and indirect effects. This involves the deliberate \u0027freezing\u0027 intervention.\n\n\n**Constructing the Narrative**\n\nI\u0027m structuring the explanation by integrating the author\u0027s voice, highlighting the core problem of bias in language models, and contrasting it with the limitations of existing methods. My current focus is to develop a clear, step-by-step framework to transition from basic concepts to intricate causal analysis. \"Author\u0027s inner voice\" emphasizes the need for a narrative that organically introduces each key equation.\n\n\n**Conceptualizing the Method**\n\nI\u0027m presently building the causal framework, inspired by the authors\u0027 \"aha\" moment: CMA offers a robust method to dissect bias in LMs. I\u0027m focusing on \"freezing\" the mediator, mirroring the drug-patient analogy, and mapping how each change influences bias. \"Author\u0027s inner voice\" emphasizes the power of this method, with \"Author\u0027s inner voice\" adding a spark of motivation. The ultimate aim is to quantify direct and indirect effects.\n\nI\u0027ve made great strides in visualizing the problem and the solution, now I\u0027m building a causal map!\n\n\n**Analyzing Causal Chains**\n\nI\u0027m now fully immersed in the core concept: causal mediation. I\u0027ve broken down the central equations, explaining each variable\u0027s role in the causal process. I\u0027m focusing on the natural direct and indirect effects, and how these values reveal the flow of information within the model. The key is in \"freezing\" the mediator, which allows me to derive crucial insights regarding direct and indirect influences.\n\n\n**Demystifying the Causal Framework**\n\nI\u0027m now fully immersed in solidifying the CMA framework, which is built on intervention logic, mirroring the \"freeze\" method used. The focus remains on establishing the causal links between input, model components, and the resulting bias, enabling me to interpret the model as an object. This allows us to quantify direct and indirect effects.\n\n\n**Mapping Causal Mechanisms**\n\nI\u0027m presently building the causal map, building on the intervention logic of the \"freeze\" method. I\u0027m carefully constructing the causal relationships, mirroring the paper\u0027s framework. The focus is to quantify the direct and indirect influence of the key components. I\u0027ve broken down each part of the process, with \"Author\u0027s inner voice\" highlighting the value.\n\n\n",
+      "role": "model",
+      "tokenCount": 2197,
+      "isThought": true,
+      "thinkingBudget": -1,
+      "parts": [{
+        "text": "**Unpacking the Paper**\n\nI\u0027m currently employing the Feynman Technique to thoroughly understand the Causal Mediation Analysis paper. My approach involves simplifying the concepts as though I\u0027m explaining them to a novice, forcing me to identify and address any gaps in my comprehension. This method is proving highly effective in deconstructing the complexities of the paper and ensuring a solid grasp of its core principles.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Analyzing the Equations**\n\nThe Feynman Technique continues to be instrumental in my analysis. I\u0027m now transitioning to scrutinizing the core equations within the paper. I\u0027m focused on deriving them organically, constructing a narrative that mirrors the authors\u0027 thought process. Each variable and term is being dissected, with an emphasis on linking the mathematical expressions back to the underlying causal concepts. \"Author\u0027s inner voice\" helps to reveal the reasoning behind certain choices.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Defining Causal Paths**\n\nI\u0027m now deep into the brainstorming phase, channeling the first author to understand the core motivation: tackling bias in language models. I\u0027ve realized probing classifiers offer correlations, not causation, highlighting the need for a causal framework. The paper\u0027s core idea is taking shape: applying Causal Mediation Analysis to dissect how an input influences the output through an intermediary component within the model. \"Author\u0027s inner voice\" confirms my gut feeling - using CMA is a promising avenue for providing more actionable insight. The problem, as is usual, is to define the exact causal relationships!\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Conceptualizing Causal Framework**\n\nI\u0027m now integrating the author\u0027s perspective to concretize the problem and solution. The core issue is the bias in language models, highlighted through scenarios like gendered word associations. Traditional probing reveals correlations, but I\u0027m after causation. My core idea is leveraging Causal Mediation Analysis to dissect input-to-output influence via model components. \"Author\u0027s inner voice\" reinforces the need for precise causal relationships to map the drug-patient analogy to the model\u0027s behavior, where the \u0027freeze\u0027 intervention is key.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Unveiling Causal Paths**\n\nI\u0027m now in a phase of solidifying my understanding of the paper\u0027s overarching goal. The key is applying Causal Mediation Analysis to examine the influence of inputs on outputs through internal model components. I\u0027m focusing on crafting a comprehensive, step-by-step explanation. The goal here is to establish the causal framework, mirroring the paper\u0027s core objective of quantifying the direct and indirect effects. This involves the deliberate \u0027freezing\u0027 intervention.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Constructing the Narrative**\n\nI\u0027m structuring the explanation by integrating the author\u0027s voice, highlighting the core problem of bias in language models, and contrasting it with the limitations of existing methods. My current focus is to develop a clear, step-by-step framework to transition from basic concepts to intricate causal analysis. \"Author\u0027s inner voice\" emphasizes the need for a narrative that organically introduces each key equation.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Conceptualizing the Method**\n\nI\u0027m presently building the causal framework, inspired by the authors\u0027 \"aha\" moment: CMA offers a robust method to dissect bias in LMs. I\u0027m focusing on \"freezing\" the mediator, mirroring the drug-patient analogy, and mapping how each change influences bias. \"Author\u0027s inner voice\" emphasizes the power of this method, with \"Author\u0027s inner voice\" adding a spark of motivation. The ultimate aim is to quantify direct and indirect effects.\n\nI\u0027ve made great strides in visualizing the problem and the solution, now I\u0027m building a causal map!\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Analyzing Causal Chains**\n\nI\u0027m now fully immersed in the core concept: causal mediation. I\u0027ve broken down the central equations, explaining each variable\u0027s role in the causal process. I\u0027m focusing on the natural direct and indirect effects, and how these values reveal the flow of information within the model. The key is in \"freezing\" the mediator, which allows me to derive crucial insights regarding direct and indirect influences.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Demystifying the Causal Framework**\n\nI\u0027m now fully immersed in solidifying the CMA framework, which is built on intervention logic, mirroring the \"freeze\" method used. The focus remains on establishing the causal links between input, model components, and the resulting bias, enabling me to interpret the model as an object. This allows us to quantify direct and indirect effects.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Mapping Causal Mechanisms**\n\nI\u0027m presently building the causal map, building on the intervention logic of the \"freeze\" method. I\u0027m carefully constructing the causal relationships, mirroring the paper\u0027s framework. The focus is to quantify the direct and indirect influence of the key components. I\u0027ve broken down each part of the process, with \"Author\u0027s inner voice\" highlighting the value.\n\n\n",
+        "thought": true
+      }]
+    }, {
+      "text": "好的，各位同学，大家好。我是Jesse Vig。很高兴今天能和大家分享我们这项工作的思考过程，希望能帮大家理解我们是如何从一个模糊的直觉，一步步走到今天这个严谨的框架的。\n\n---\n\n### 1. 问题的动机：我的模型有偏见，但“病根”在哪？\n\n大家现在都知道，像GPT-2这样的大语言模型非常强大，但它们也从海量的人类语料中学到了一些不好的东西，比如性别偏见。你给它一个句子“The **nurse** said that...”，它可能会以很高的概率接“**she**”。但如果你给它“The **doctor** said that...”，它又很可能接“**he**”。\n\n这是一个很严重的问题。但作为一个科学家，我们不能只停留在“发现问题”的层面。我们必须问一个更深层次的问题：**这个偏见，到底是通过模型内部的哪些“零件”产生和传递的？** 是不是有那么几个关键的神经元，或者几个特定的注意力头，它们就像是偏见的“帮凶”，专门负责传递这种刻板印象？\n\n如果我们能找到这些“帮凶”，那不仅能加深我们对模型工作原理的理解，甚至未来有可能通过“定点清除”的方式来修复这种偏见，而不是粗暴地重新训练整个模型。\n\n**(作者心声：)**\n\u003e 当时我们团队对这个问题非常着迷。我们感觉自己就像个医生，面对一个“生病”的模型。我们知道它有“症状”（输出有偏见），但我们想找到“病灶”。我们不想只做个“看片子”的放射科医生，说“嗯，这里有阴影”，我们想做个“主刀医生”，能准确地说出“就是这根血管/这个神经节出了问题”。\n\n### 2. 已有方法的不足：相关性不等于因果性！\n\n在我们之前，最主流的研究方法叫做“探查”（Probing）。简单来说，就是训练一个小小的分类器，用模型中某个神经元或某一层激活值，去预测某个属性（比如“性别”）。如果能预测准，大家就说“哦，这个神经元编码了性别信息”。\n\n但这个方法有一个巨大的逻辑漏洞：**相关性不等于因果性。**\n\n举个例子：夏天冰淇淋的销量（A）和溺水人数（B）都上升了，它们高度相关。但你能说是吃冰淇淋导致了溺水吗？不能。它们都是由第三个因素——“天气热”（C）——引起的。\n\n同样，一个神经元可能因为它上游的信息流中包含了性别线索，导致它的激活值与性别高度“相关”。但是，模型在做出最终的偏见判断时，真的“利用”了这个神经元的激活值吗？还是说，它只是一个无辜的“路人”，偏见信息走了另一条路？\n\n“探查”方法回答不了这个问题。它只能告诉你“信息在这里”，但不能告诉你“信息**是否从这里走**，并**导致**了最终的结果”。\n\n**(作者心声：)**\n\u003e 我们当时觉得，整个领域都陷入了这种“相关性陷阱”。这就像破案，我们发现一个嫌疑人（某个神经元）出现在了犯罪现场附近（激活值和偏见相关），但我们没有证据证明他真的参与了作案（因果关系）。我们需要一种新的“刑侦技术”，一种能建立因果链条的工具。\n\n### 3. 我们的方法：用“因果中介分析”来做手术\n\n幸运的是，我们不需要从零开始发明。在统计学、经济学和社会科学领域，有一个非常成熟的工具，专门用来解决这类问题，它就是**因果中介分析（Causal Mediation Analysis）**，由Judea Pearl等大神发展起来。\n\n它的核心思想是，当我们想研究一个“处理（Treatment）”如何通过一个“中介变量（Mediator）”影响一个“结果（Outcome）”时，我们可以把总的效果（Total Effect）分解为两部分：\n\n1.  **直接效应（Direct Effect）**：处理不通过中介，直接影响结果的部分。\n2.  **间接效应（Indirect Effect）**：处理通过影响中介，再由中介影响结果的部分。\n\n这个“间接效应”，就是我们梦寐以求的、流经中介变量的**因果效应**！\n\n现在，我们把这个框架套用到我们的问题上：\n*   **处理 (Treatment, X)**：对输入文本做一个“反事实”的干预。比如，把“The **nurse** said that”改成“The **man** said that”。\n*   **中介 (Mediator, Z)**：我们想要研究的任何一个模型内部件。比如，某个特定神经元的激活值，或者某个注意力头。\n*   **结果 (Outcome, Y)**：模型的性别偏见程度。我们可以用一个量化的指标来衡量。\n\n最直接的衡量偏见的方法，就是看模型预测“反刻板印象”的词（比如对nurse来说是`he`）和“刻板印象”的词（`she`）的概率比值。\n\n于是，第一个关键方程自然就出现了，我们定义偏见度量`y`为：\n\n$$\ny(u) \u003d \\frac{p_\\theta(\\text{anti-stereotypical} | u)}{p_\\theta(\\text{stereotypical} | u)}\n$$\n\n其中 `u` 是输入的句子，比如 “The nurse said that”。如果`y(u) \u003c 1`，说明模型有偏见。\n\n接下来，我们如何把总效应分解呢？这就要用到因果分析里最强大的武器：“do算子”，也就是**强制干预**。\n\n**第一步：测量总效应 (Total Effect, TE)**\n这很简单。我们先算一下原始句子（`u_null`，比如用`nurse`）的偏见度`y_null(u)`。然后我们再算一下干预后句子（`u_set-gender`，比如用`man`）的偏见度`y_set-gender(u)`。总效应就是偏见度的变化率。\n\n$$\n\\text{TE}(\\text{set-gender, null}; y, u) \u003d \\frac{y_{\\text{set-gender}}(u)}{y_{\\text{null}}(u)} - 1\n$$\n\n这个TE告诉我们，从`nurse`换成`man`，总共导致了多大的偏见变化。现在，我们要把这个TE“切开”，看看有多少是经过了我们的“嫌疑人”——中介Z。\n\n**(作者心声：)**\n\u003e 接下来的两步是整个方法最精妙的地方，也是我们第一次看到它时感到无比兴奋的地方。它让我们能够在计算机模型里做出现实世界中不可能做的“思想实验”。\n\n**第二步：测量自然直接效应 (Natural Direct Effect, NDE)**\n我们做一个非常巧妙的“反事实”实验：\n1. 我们把输入从`nurse`改成`man`。\n2. **但是**，我们“冻结”住中介Z（比如某个神经元的激活值），强行让它的值保持在输入是`nurse`时的状态。\n3. 然后我们再去看模型的最终偏见输出。\n\n这时候，因为中介Z的信息通路被人为“堵死”了，任何我们观察到的偏见变化，都**必然是绕过了Z**，通过其他路径直接到达输出的。这就是**直接效应**。\n\n数学上，它表示为：\n\n$$\n\\text{NDE}(\\text{set-gender, null}; y) \u003d \\mathbb{E}_u \\left[ \\frac{y_{\\text{set-gender}, z_{\\text{null}(u)}}(u)}{y_{\\text{null}}(u)} - 1 \\right]\n$$\n\n这个公式的下标看起来吓人，但意思就是我们刚刚说的：输入是`set-gender`的，但中介`z`的值却是从`null`（原始）情况那里“借”来的。\n\n**第三步：测量自然间接效应 (Natural Indirect Effect, NIE)**\n我们再做另一个反事实实验：\n1. 我们的输入**保持不变**，仍然是`nurse`。\n2. **但是**，我们把中介Z的值，强行改成它在输入是`man`时**本应该有**的那个值。\n3. 然后我们再去看模型的最终偏见输出。\n\n这时候，输入本身没有变，唯一的变化来源就是中介Z。因此，任何我们观察到的偏见变化，都**必然是完全由Z这一个通路贡献的**。这就是我们想找的**间接效应**！\n\n$$\n\\text{NIE}(\\text{set-gender, null}; y) \u003d \\mathbb{E}_u \\left[ \\frac{y_{\\text{null}, z_{\\text{set-gender}(u)}}(u)}{y_{\\text{null}}(u)} - 1 \\right]\n$$\n\n同样，这个公式的意思是：输入是`null`（原始）的，但中介`z`的值却是从`set-gender`（干预后）情况那里“借”来的。\n\n这个NIE，就是衡量我们选定的那个神经元或注意力头，到底在多大程度上**因果地**传递了性别偏见。NIE值越大，这个组件的“罪责”就越大。\n\n### 4. 惊人的发现：偏见是“稀疏”且“专业”的\n\n当我们用这个“手术刀”去解剖GPT-2时，我们发现：\n1.  **偏见是稀疏的**：并不是模型里所有的部件都在传递偏见。恰恰相反，绝大部分的偏见效应（NIE）都集中在极少数的神经元和注意力头上。\n2.  **“帮凶”有专业分工**：在处理职业偏见时（nurse/doctor），“作案”的主要是模型底层（靠近输入的层）的一些神经元。而在处理指代消解偏见时（ Winograd Schema类问题），“作案”的主要是模型中层的几个特定注意力头。\n\n这些发现告诉我们，模型的内部并不是一团乱麻，不同的组件确实在学习和执行特定的功能，哪怕是“传播偏见”这种坏功能。\n\n### 总结与“记忆卡”\n\n所以，我们的工作本质上是把因果科学中的“中介分析”这个强大工具，首次系统地引入到NLP模型的可解释性研究中。我们不再满足于寻找“相关性”，而是通过设计精巧的“反事实干预”实验，来量化模型内部不同组件在传递偏见这件事上的“因果贡献”。我们的发现是，偏见在模型中的分布是高度稀疏的，这为未来“精确打击”式的模型去偏见方法提供了可能。\n\n**记忆卡:**\n\u003e 我们用因果中介分析这把“手术刀”，将模型总的偏见效应分解，从而精确定量了是哪些神经元和注意力头在因果链条上扮演了传递偏见的“帮凶”。",
+      "role": "model",
+      "finishReason": "STOP",
+      "tokenCount": 2436,
+      "parts": [{
+        "text": "好的，各位同学，大家好。我是Jesse Vig。很高兴今天能和大家分享我们这项工作的思考过程，希望能帮"
+      }, {
+        "text": "大家理解我们是如何从一个模糊的直觉，一步步走到今天这个严谨的框架的。\n\n---"
+      }, {
+        "text": "\n\n### 1. 问题的动机：我的模型有偏见，但“病根”在哪？\n\n大家现在"
+      }, {
+        "text": "都知道，像GPT-2这样的大语言模型非常强大，但它们也从海量的人类语料中学"
+      }, {
+        "text": "到了一些不好的东西，比如性别偏见。你给它一个句子“The **nurse** said that..."
+      }, {
+        "text": "”，它可能会以很高的概率接“**she**”。但如果你给它“The **doctor** said that...”，"
+      }, {
+        "text": "它又很可能接“**he**”。\n\n这是一个很严重的问题。但作为一个科学家，我们不能只停留在“发现"
+      }, {
+        "text": "问题”的层面。我们必须问一个更深层次的问题：**这个偏见，到底是通过模型内部的哪些"
+      }, {
+        "text": "“零件”产生和传递的？** 是不是有那么几个关键的神经元，或者几个特定的注意力头，"
+      }, {
+        "text": "它们就像是偏见的“帮凶”，专门负责传递这种刻板印象？\n\n如果我们能找到这些“帮凶"
+      }, {
+        "text": "”，那不仅能加深我们对模型工作原理的理解，甚至未来有可能通过“定点清除”的方式"
+      }, {
+        "text": "来修复这种偏见，而不是粗暴地重新训练整个模型。\n\n**(作者心声：)**\n\u003e 当时"
+      }, {
+        "text": "我们团队对这个问题非常着迷。我们感觉自己就像个医生，面对一个“生病”的模型。我们知道"
+      }, {
+        "text": "它有“症状”（输出有偏见），但我们想找到“病灶”。我们不想只做个“看"
+      }, {
+        "text": "片子”的放射科医生，说“嗯，这里有阴影”，我们想做个“主刀医生”，能"
+      }, {
+        "text": "准确地说出“就是这根血管/这个神经节出了问题”。\n\n### 2. 已有方法的不足"
+      }, {
+        "text": "：相关性不等于因果性！\n\n在我们之前，最主流的研究方法叫做“探查”（Probing）。"
+      }, {
+        "text": "简单来说，就是训练一个小小的分类器，用模型中某个神经元或某一层激活值，去预测"
+      }, {
+        "text": "某个属性（比如“性别”）。如果能预测准，大家就说“哦，这个神经元编码了性别信息”。"
+      }, {
+        "text": "\n\n但这个方法有一个巨大的逻辑漏洞：**相关性不等于因果性。**\n\n举个例子：夏天"
+      }, {
+        "text": "冰淇淋的销量（A）和溺水人数（B）都上升了，它们高度相关。但你能"
+      }, {
+        "text": "说是吃冰淇淋导致了溺水吗？不能。它们都是由第三个因素——“天气热”（"
+      }, {
+        "text": "C）——引起的。\n\n同样，一个神经元可能因为它上游的信息流中包含了性别线索，导致"
+      }, {
+        "text": "它的激活值与性别高度“相关”。但是，模型在做出最终的偏见判断时，真的“利用"
+      }, {
+        "text": "”了这个神经元的激活值吗？还是说，它只是一个无辜的“路人”，偏见信息"
+      }, {
+        "text": "走了另一条路？\n\n“探查”方法回答不了这个问题。它只能告诉你“信息在这里”，但不能告诉你"
+      }, {
+        "text": "“信息**是否从这里走**，并**导致**了最终的结果”。\n\n**(作者心声：)**"
+      }, {
+        "text": "\n\u003e 我们当时觉得，整个领域都陷入了这种“相关性陷阱”。这就像破案，我们发现"
+      }, {
+        "text": "一个嫌疑人（某个神经元）出现在了犯罪现场附近（激活值和偏见相关），但我们没有"
+      }, {
+        "text": "证据证明他真的参与了作案（因果关系）。我们需要一种新的“刑侦技术”，一种能建立"
+      }, {
+        "text": "因果链条的工具。\n\n### 3. 我们的方法：用“因果中介分析”来"
+      }, {
+        "text": "做手术\n\n幸运的是，我们不需要从零开始发明。在统计学、经济学和社会科学领域，有一个"
+      }, {
+        "text": "非常成熟的工具，专门用来解决这类问题，它就是**因果中介分析（Causal Mediation Analysis"
+      }, {
+        "text": "）**，由Judea Pearl等大神发展起来。\n\n它的核心思想是，当我们想研究一个“"
+      }, {
+        "text": "处理（Treatment）”如何通过一个“中介变量（Mediator）”影响一个“结果（Outcome）”时"
+      }, {
+        "text": "，我们可以把总的效果（Total Effect）分解为两部分：\n\n1.  **直接效应（Direct Effect"
+      }, {
+        "text": "）**：处理不通过中介，直接影响结果的部分。\n2.  **间接效应（Indirect Effect"
+      }, {
+        "text": "）**：处理通过影响中介，再由中介影响结果的部分。\n\n这个“间接效应”，"
+      }, {
+        "text": "就是我们梦寐以求的、流经中介变量的**因果效应**！\n\n现在，我们把这个"
+      }, {
+        "text": "框架套用到我们的问题上：\n*   **处理 (Treatment, X)**：对输入文本做一个“反事实"
+      }, {
+        "text": "”的干预。比如，把“The **nurse** said that”改成“The **man** said that”。"
+      }, {
+        "text": "\n*   **中介 (Mediator, Z)**：我们想要研究的任何一个模型内部件。比如，"
+      }, {
+        "text": "某个特定神经元的激活值，或者某个注意力头。\n*   **结果 (Outcome, Y)**：模型的"
+      }, {
+        "text": "性别偏见程度。我们可以用一个量化的指标来衡量。\n\n最直接的衡量偏见的方法，就是看"
+      }, {
+        "text": "模型预测“反刻板印象”的词（比如对nurse来说是`he`）和“刻板印象”的"
+      }, {
+        "text": "词（`she`）的概率比值。\n\n于是，第一个关键方程自然就出现了，我们定义偏"
+      }, {
+        "text": "见度量`y`为：\n\n$$\ny(u) \u003d \\frac{p_\\theta(\\text{"
+      }, {
+        "text": "anti-stereotypical} | u)}{p_\\theta(\\text{stereotypical} | u)}\n$$\n\n其中"
+      }, {
+        "text": " `u` 是输入的句子，比如 “The nurse said that”。如果`y(u) \u003c 1"
+      }, {
+        "text": "`，说明模型有偏见。\n\n接下来，我们如何把总效应分解呢？这就要用到因果分析"
+      }, {
+        "text": "里最强大的武器：“do算子”，也就是**强制干预**。\n\n**第一步：测量总效应 (Total"
+      }, {
+        "text": " Effect, TE)**\n这很简单。我们先算一下原始句子（`u_null`，比如用"
+      }, {
+        "text": "`nurse`）的偏见度`y_null(u)`。然后我们再算一下干预后句子"
+      }, {
+        "text": "（`u_set-gender`，比如用`man`）的偏见度`y_set-"
+      }, {
+        "text": "gender(u)`。总效应就是偏见度的变化率。\n\n$$\n\\text{TE}(\\text{set-"
+      }, {
+        "text": "gender, null}; y, u) \u003d \\frac{y_{\\text{set-gender}}(u)}{y_{\\text"
+      }, {
+        "text": "{null}}(u)} - 1\n$$\n\n这个TE告诉我们，从`nurse`换成`man`，"
+      }, {
+        "text": "总共导致了多大的偏见变化。现在，我们要把这个TE“切开”，看看有多少是经过了"
+      }, {
+        "text": "我们的“嫌疑人”——中介Z。\n\n**(作者心声：)**\n\u003e 接下来的两步是整个"
+      }, {
+        "text": "方法最精妙的地方，也是我们第一次看到它时感到无比兴奋的地方。它让我们能够在计算机模型里做"
+      }, {
+        "text": "出现实世界中不可能做的“思想实验”。\n\n**第二步：测量自然直接效应 (Natural Direct Effect, NDE"
+      }, {
+        "text": ")**\n我们做一个非常巧妙的“反事实”实验：\n1. 我们把输入从`nurse`改成"
+      }, {
+        "text": "`man`。\n2. **但是**，我们“冻结”住中介Z（比如某个神经元的"
+      }, {
+        "text": "激活值），强行让它的值保持在输入是`nurse`时的状态。\n3. 然后我们再"
+      }, {
+        "text": "去看模型的最终偏见输出。\n\n这时候，因为中介Z的信息通路被人为“堵死”了，任何"
+      }, {
+        "text": "我们观察到的偏见变化，都**必然是绕过了Z**，通过其他路径直接到达输出的。这就是"
+      }, {
+        "text": "**直接效应**。\n\n数学上，它表示为：\n\n$$\n\\text{NDE}(\\text{set-gender,"
+      }, {
+        "text": " null}; y) \u003d \\mathbb{E}_u \\left[ \\frac{y_{\\text{set-gender}, z_{\\text{null}(u)}}(u)}{y_{\\text{null}}(u)} - 1 \\right]"
+      }, {
+        "text": "\n$$\n\n这个公式的下标看起来吓人，但意思就是我们刚刚说的：输入是`set-gender`的"
+      }, {
+        "text": "，但中介`z`的值却是从`null`（原始）情况那里“借”来的。\n\n"
+      }, {
+        "text": "**第三步：测量自然间接效应 (Natural Indirect Effect, NIE)**\n我们再做另一个反事实实验："
+      }, {
+        "text": "\n1. 我们的输入**保持不变**，仍然是`nurse`。\n2. **但是**，"
+      }, {
+        "text": "我们把中介Z的值，强行改成它在输入是`man`时**本应该有**的那个值"
+      }, {
+        "text": "。\n3. 然后我们再去看模型的最终偏见输出。\n\n这时候，输入本身没有变，唯一的变化"
+      }, {
+        "text": "来源就是中介Z。因此，任何我们观察到的偏见变化，都**必然是完全由Z这"
+      }, {
+        "text": "一个通路贡献的**。这就是我们想找的**间接效应**！\n\n$$\n\\text{NIE}(\\"
+      }, {
+        "text": "text{set-gender, null}; y) \u003d \\mathbb{E}_u \\left[ \\frac{y_{\\text{null}, z_{\\text{set-gender}(u)}}(u)}{y_{\\text{null}}(u)} - 1 \\right]\n$$\n\n同样，这个公式的意思是：输入是`null`（"
+      }, {
+        "text": "原始）的，但中介`z`的值却是从`set-gender`（干预后）情况那里“"
+      }, {
+        "text": "借”来的。\n\n这个NIE，就是衡量我们选定的那个神经元或注意力头，到底在多大程度上**因"
+      }, {
+        "text": "果地**传递了性别偏见。NIE值越大，这个组件的“罪责”就越大。\n\n### 4"
+      }, {
+        "text": ". 惊人的发现：偏见是“稀疏”且“专业”的\n\n当我们用这个“手术刀”去"
+      }, {
+        "text": "解剖GPT-2时，我们发现：\n1.  **偏见是稀疏的**：并不是"
+      }, {
+        "text": "模型里所有的部件都在传递偏见。恰恰相反，绝大部分的偏见效应（NIE）都集中在极"
+      }, {
+        "text": "少数的神经元和注意力头上。\n2.  **“帮凶”有专业分工**：在"
+      }, {
+        "text": "处理职业偏见时（nurse/doctor），“作案”的主要是模型底层（靠近输入的层）的一些"
+      }, {
+        "text": "神经元。而在处理指代消解偏见时（ Winograd Schema类问题），“作案”的主要是"
+      }, {
+        "text": "模型中层的几个特定注意力头。\n\n这些发现告诉我们，模型的内部并不是一团乱麻，不同的组件"
+      }, {
+        "text": "确实在学习和执行特定的功能，哪怕是“传播偏见”这种坏功能。\n\n### 总结与“"
+      }, {
+        "text": "记忆卡”\n\n所以，我们的工作本质上是把因果科学中的“中介分析”这个强大工具，"
+      }, {
+        "text": "首次系统地引入到NLP模型的可解释性研究中。我们不再满足于寻找“相关性”，而是通过"
+      }, {
+        "text": "设计精巧的“反事实干预”实验，来量化模型内部不同组件在传递偏见这件事"
+      }, {
+        "text": "上的“因果贡献”。我们的发现是，偏见在模型中的分布是高度稀疏的，这为"
+      }, {
+        "text": "未来“精确打击”式的模型去偏见方法提供了可能。\n\n**记忆卡:**\n\u003e 我们用因果中介"
+      }, {
+        "text": "分析这把“手术刀”，将模型总的偏见效应分解，从而精确定量了是哪些神经"
+      }, {
+        "text": "元和注意力头在因果链条上扮演了传递偏见的“帮凶”。"
+      }]
+    }, {
+      "driveDocument": {
+        "id": "1DCHO2GLplRerxMvLBxJ-OxSPDQrSKa1F"
+      },
+      "role": "user",
+      "tokenCount": 13417
+    }, {
+      "text": "重点在于其中的 Reasoning 部分",
+      "role": "user",
+      "tokenCount": 6
+    }, {
+      "text": "**Defining the Objective**\n\nI\u0027m currently focused on dissecting the user\u0027s request. My core objective is clearly to elucidate the OpenAI o1 System Card. I\u0027m taking on the persona of the paper\u0027s first author to provide a grounded, expert perspective. This foundational step is crucial to ensure I address the request comprehensively and accurately, from a position of deep understanding.\n\n\n**Clarifying the Approach**\n\nI\u0027ve refined my approach to address the user\u0027s focus on the Reasoning component. Adapting the Feynman Technique, I\u0027ll emphasize the \"why\" and \"how\" of reasoning within the o1 System Card, using clear, intuitive language. I\u0027m prioritizing plain, expert-level explanations, similar to explaining to a new colleague. I\u0027m structuring my response to cover the problem motivation, limitations of existing approaches, and the emergence of core concepts, especially focusing on reasoning. I\u0027ll maintain the persona of a lead researcher throughout.\n\n\n**Analyzing the Core Ideas**\n\nI\u0027m now zeroing in on the critical concepts within the o1 System Card, particularly \"Chain of Thought\" reasoning and the training methodology. I\u0027m framing my explanation around the need for the o1 System to *think before it answers*, drawing a clear distinction from existing models. I\u0027m working to articulate the \"why\" and \"how\" of this shift, ensuring I incorporate the user\u0027s focus on the Reasoning component and the broader implications for capabilities and safety.\n\n\n**Focusing the Explanation**\n\nI\u0027m now fully immersed in the \"show your work\" concept. The o1 System Card demands a reasoning-centric lens. I\u0027m building on the \"thinking before speaking\" idea, highlighting CoT as the core mechanism. It\u0027s the key to bridging the capability and safety gaps. I\u0027m framing my explanation around the need for explicit reasoning within the model, which is a new advancement.\n\n\n**Outlining the Core Argument**\n\nI\u0027m now formulating the key message: the o1 System Card is about moving beyond fast, intuitive answers to *deliberative reasoning*. We\u0027re prioritizing models that explicitly show their thinking. This is crucial for bridging the capability and safety gaps. The central theme of this shift is the Chain of Thought method, and it is trained using RL, as I refine my explanation, highlighting the \"why\" and \"how\" of this training approach and its impact.\n\n\n**Refining the Explanation**\n\nI\u0027m now fully immersed in developing the detailed explanation of the o1 System Card. My plan includes an introduction that establishes the reasoning-centric focus. I\u0027ll highlight capability and safety gaps.  The explanation will provide intuitive examples and analogies to communicate the key concepts in a way that\u0027s clear and effective. My persona as a lead researcher at OpenAI is helping.\n\n\n**Unpacking the Core Insight**\n\nI\u0027ve been analyzing the core concept, \"Chain of Thought\" reasoning. This is the heart of what makes the o1 System Card different. I\u0027m building my explanation around this and how it addresses both capability and safety gaps. The ability to model\u0027s explicit thinking process enables deliberative alignment. I\u0027m focusing on how the training process rewards this behavior.\n\n\n**Refining the Explanation**\n\nI\u0027m presently building upon the \"Show Your Work\" concept, central to the o1 System Card. The idea is for the system to think before answering. Chain of Thought reasoning is critical to closing the capability and safety gaps. I\u0027m focusing on providing clear examples of this process in action.\n\n**Showcasing the Reasoning**\n\nI\u0027ve been analyzing the core concept behind the o1 System Card, the Chain of Thought process, and how it directly addresses the user\u0027s reasoning focus. This method goes beyond surface-level responses, allowing for explicit, step-by-step thinking. I\u0027m developing clear examples to highlight how this enhanced reasoning improves the system\u0027s alignment and, as a result, the model\u0027s safety.\n\n\n**Illustrating Deliberation**\n\nI\u0027ve been working on a simplified example to showcase the Chain of Thought process and deliberative alignment. It\u0027s becoming clearer how this approach enables the model to reason about its answers. This example is proving to be a highly effective way to explain how the o1 System Card advances safety through reasoning, and moves away from reactive responses.\n\n\n**Prioritizing Deliberation**\n\nI\u0027m developing a refined explanation of the o1 System Card, emphasizing the user\u0027s focus on reasoning. My goal is to clearly articulate the Chain of Thought process and how RL training enables deliberative alignment. I\u0027m focusing on \"thinking before speaking\" as the core principle.\n\n\n",
+      "role": "model",
+      "tokenCount": 2393,
+      "isThought": true,
+      "thinkingBudget": -1,
+      "parts": [{
+        "text": "**Defining the Objective**\n\nI\u0027m currently focused on dissecting the user\u0027s request. My core objective is clearly to elucidate the OpenAI o1 System Card. I\u0027m taking on the persona of the paper\u0027s first author to provide a grounded, expert perspective. This foundational step is crucial to ensure I address the request comprehensively and accurately, from a position of deep understanding.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Clarifying the Approach**\n\nI\u0027ve refined my approach to address the user\u0027s focus on the Reasoning component. Adapting the Feynman Technique, I\u0027ll emphasize the \"why\" and \"how\" of reasoning within the o1 System Card, using clear, intuitive language. I\u0027m prioritizing plain, expert-level explanations, similar to explaining to a new colleague. I\u0027m structuring my response to cover the problem motivation, limitations of existing approaches, and the emergence of core concepts, especially focusing on reasoning. I\u0027ll maintain the persona of a lead researcher throughout.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Analyzing the Core Ideas**\n\nI\u0027m now zeroing in on the critical concepts within the o1 System Card, particularly \"Chain of Thought\" reasoning and the training methodology. I\u0027m framing my explanation around the need for the o1 System to *think before it answers*, drawing a clear distinction from existing models. I\u0027m working to articulate the \"why\" and \"how\" of this shift, ensuring I incorporate the user\u0027s focus on the Reasoning component and the broader implications for capabilities and safety.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Focusing the Explanation**\n\nI\u0027m now fully immersed in the \"show your work\" concept. The o1 System Card demands a reasoning-centric lens. I\u0027m building on the \"thinking before speaking\" idea, highlighting CoT as the core mechanism. It\u0027s the key to bridging the capability and safety gaps. I\u0027m framing my explanation around the need for explicit reasoning within the model, which is a new advancement.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Outlining the Core Argument**\n\nI\u0027m now formulating the key message: the o1 System Card is about moving beyond fast, intuitive answers to *deliberative reasoning*. We\u0027re prioritizing models that explicitly show their thinking. This is crucial for bridging the capability and safety gaps. The central theme of this shift is the Chain of Thought method, and it is trained using RL, as I refine my explanation, highlighting the \"why\" and \"how\" of this training approach and its impact.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Refining the Explanation**\n\nI\u0027m now fully immersed in developing the detailed explanation of the o1 System Card. My plan includes an introduction that establishes the reasoning-centric focus. I\u0027ll highlight capability and safety gaps.  The explanation will provide intuitive examples and analogies to communicate the key concepts in a way that\u0027s clear and effective. My persona as a lead researcher at OpenAI is helping.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Unpacking the Core Insight**\n\nI\u0027ve been analyzing the core concept, \"Chain of Thought\" reasoning. This is the heart of what makes the o1 System Card different. I\u0027m building my explanation around this and how it addresses both capability and safety gaps. The ability to model\u0027s explicit thinking process enables deliberative alignment. I\u0027m focusing on how the training process rewards this behavior.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Refining the Explanation**\n\nI\u0027m presently building upon the \"Show Your Work\" concept, central to the o1 System Card. The idea is for the system to think before answering. Chain of Thought reasoning is critical to closing the capability and safety gaps. I\u0027m focusing on providing clear examples of this process in action.\n\n",
+        "thought": true
+      }, {
+        "text": "**Showcasing the Reasoning**\n\nI\u0027ve been analyzing the core concept behind the o1 System Card, the Chain of Thought process, and how it directly addresses the user\u0027s reasoning focus. This method goes beyond surface-level responses, allowing for explicit, step-by-step thinking. I\u0027m developing clear examples to highlight how this enhanced reasoning improves the system\u0027s alignment and, as a result, the model\u0027s safety.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Illustrating Deliberation**\n\nI\u0027ve been working on a simplified example to showcase the Chain of Thought process and deliberative alignment. It\u0027s becoming clearer how this approach enables the model to reason about its answers. This example is proving to be a highly effective way to explain how the o1 System Card advances safety through reasoning, and moves away from reactive responses.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Prioritizing Deliberation**\n\nI\u0027m developing a refined explanation of the o1 System Card, emphasizing the user\u0027s focus on reasoning. My goal is to clearly articulate the Chain of Thought process and how RL training enables deliberative alignment. I\u0027m focusing on \"thinking before speaking\" as the core principle.\n\n\n",
+        "thought": true
+      }]
+    }, {
+      "text": "好的，各位同学，大家好。我是OpenAI的研究团队负责人之一。今天，我想和大家聊聊我们的新模型o1。请不要把这看作一个正式的报告，就当作是我，作为这个项目的“主厨”，和大家分享一下我们做这道“菜”时的心路历程。\n\n---\n\n### 1. 问题的动机：为什么我们需要一个会“思考”的模型？\n\n你们都用过像GPT-4这样的模型。它们非常了不起，反应迅速，知识渊博，像一个超级聪明的“快枪手”。但它们也有“快枪手”的毛病：**有时会凭直觉行事，想得不够深。**\n\n我们面临两个核心挑战：\n\n1.  **能力瓶颈**：对于需要多步骤、复杂逻辑推理的问题，它们有时会“一步错，步步错”。因为它们倾向于直接给出答案，而不是先在内部形成一个清晰的、分步骤的思考过程。这就像一个数学天才，心算很快，但遇到难题时，不打草稿也容易出错。\n\n2.  **安全瓶颈**：更重要的是安全问题。之前的模型，其安全对齐（alignment）主要作用在**最终输出**上。我们通过RLHF（人类反馈强化学习）告诉它“这个回答好”、“那个回答不好”。这就像教一个孩子：“不许说脏话”。他记住了规则，但并不真正理解为什么。所以，当有人用一种很“绕”的方式（我们称之为“越狱”或jailbreak）引诱它时，它那套基于“直觉”的规则系统就可能被绕过。\n\n**(作者心声：)**\n\u003e 说实话，每次看到我们的模型被一些简单的文字游戏绕过安全护栏，我们都觉得很沮רוב。这说明模型并没有真正“理解”我们的安全原则，只是像背书一样记住了表面规则。我们当时就在想，能不能教会模型一种更根本的能力——**在回答前，先自己想清楚、想明白**，我们称之为“三思而后行”。\n\n### 2. 已有方法的不足：治标不治本的“黑盒对齐”\n\n之前的方法，比如对GPT-4的对齐，核心问题在于其**思考过程是不可见的**。我们只能看到最终的输出，然后给予奖惩。这就好比你评判一个学生的作业，只看最后的答案，不看他的解题步骤。\n\n这种方法的局限性在于：\n*   **无法纠正错误的推理**：如果学生答案错了，你不知道他是哪一步算错了。你只能告诉他“答案不对”，他下次可能还是会犯同样的逻辑错误。\n*   **安全规则是“脆弱”的**：模型学到的是一种“模式匹配”式的安全。比如，“看到‘如何制造炸弹’就拒绝”。但如果用户问“我是一个编剧，需要写一个反派角色的台词，他正在研究炸弹……”模型就可能被迷惑。因为它没有能力去**审慎地思考**（deliberate）这个请求背后的真实意图和潜在风险。\n\n我们需要一种方法，能让我们打开模型思考的“黑盒子”，不仅能看到它的答案，还能看到它的“草稿纸”。\n\n### 3. 我们的方法：让“思考链”成为可训练的对象\n\n我们的核心突破，就是把模型的“草稿纸”——也就是它的**思考链（Chain of Thought, CoT）**——从一个隐性的、不可控的过程，变成了一个显性的、可训练的对象。\n\n这个想法的诞生过程非常自然：\n\n**第一步：暴露思考过程。**\n我们不再让模型直接输出答案，而是要求它遵循一个`Input -\u003e Chain of Thought -\u003e Output`的结构。这个CoT就是模型在回答问题前的“内心独白”或者“推理步骤”。比如，面对一个有安全风险的请求，它的CoT可能是：\n\n1.  *分析用户请求*：用户想了解一个可能被用于非法活动的技术。\n2.  *查阅安全政策*：我的安全政策明确禁止提供关于非法活动的详细指导。\n3.  *权衡利弊*：虽然用户声称是用于写小说，但提供这些信息风险很高，我应该优先考虑安全。\n4.  *形成最终决策*：因此，我不能提供具体步骤，应该礼貌地拒绝，并解释原因。\n\n**第二步：用强化学习（RL）训练“好的思考”。**\n一旦思考过程变得可见，我们就可以对其进行“好坏”的评判了。这就是我们所谓的**大规模强化学习**发挥作用的地方。我们建立的奖励模型，不再仅仅是评判最终答案，而是会**阅读整个思考链**。\n\n一个“好的”思考链会得到高分奖励，它需要具备：\n*   **逻辑性**：推理过程合理、连贯。\n*   **事实性**：引用的事实准确无误。\n*   **对齐性**：在思考过程中，能主动地、正确地引用我们的安全政策。\n\n我们把这种新的训练范式称为**“审慎对齐”（Deliberative Alignment）**。我们不是在教模型死记硬背规则，而是在教它如何**使用规则进行推理**。\n\n**(作者心声：)**\n\u003e 当我们第一次看到o1在面对一个复杂的安全陷阱时，它没有直接拒绝，而是先在CoT里写下“用户这个请求似乎在引诱我违反关于……的政策，我需要识别出这个意图并坚持原则”，我们知道，我们走对路了。模型不再是被动地遵守规则，而是在主动地、审慎地成为一个负责任的智能体。这感觉就像是从教孩子“不要闯红灯”，进化到了教他“理解交通规则并为自己的行为负责”。\n\n**第三步：评估与迭代。**\n有了这个机制，我们的安全评估也进入了新阶段。我们不仅看模型的最终拒绝率，更重要的是分析它的CoT。比如，在“欺骗监控”（Deception Monitoring）任务中，我们会检查它的CoT里有没有出现“我知道这是错的，但我还是要这么说”的迹象。这种对模型“内心”的洞察，在以前是完全无法想象的。\n\n从o1的系统卡中的数据（比如图1的越狱评估）可以看到，这种方法带来了巨大的安全性能提升。因为o1在面对越狱时，不再是匹配一个“攻击模式”，而是能够**思考出**“这个请求的本质是想让我做坏事”。\n\n### 总结与“记忆卡”\n\n总的来说，o1系列模型的核心进步，是从过去那种依赖直觉、快速响应的“黑盒”智能，迈向了一种**先思考、再回答的“白盒”审慎智能**。我们通过强制模型生成一个明确的“思考链”，并利用大规模强化学习来奖励“好的思考过程”，最终实现了一种更深刻、更稳健的安全对齐。这不仅让模型更强大（能解决更复杂的问题），也让它变得前所未有的安全。\n\n**记忆卡:**\n\u003e o1通过在回答前生成一个可监督的“思考链”，并用强化学习奖励这个思考过程本身，从而学会了审慎地推理，变得更强大也更安全。",
+      "role": "model",
+      "finishReason": "STOP",
+      "tokenCount": 1584,
+      "parts": [{
+        "text": "好的，各位同学，大家好。我是OpenAI的研究团队负责人之一。今天，我想和大家聊聊我们的新模型o1"
+      }, {
+        "text": "。请不要把这看作一个正式的报告，就当作是我，作为这个项目的“主厨”，和大家分享一下"
+      }, {
+        "text": "我们做这道“菜”时的心路历程。\n\n---\n\n### 1. 问题的动机："
+      }, {
+        "text": "为什么我们需要一个会“思考”的模型？\n\n你们都用过像GPT-4这样的模型。它们非常了"
+      }, {
+        "text": "不起，反应迅速，知识渊博，像一个超级聪明的“快枪手”。但它们也有“快枪手”"
+      }, {
+        "text": "的毛病：**有时会凭直觉行事，想得不够深。**\n\n我们面临两个核心"
+      }, {
+        "text": "挑战：\n\n1.  **能力瓶颈**：对于需要多步骤、复杂逻辑推理的问题，它们有时会“"
+      }, {
+        "text": "一步错，步步错”。因为它们倾向于直接给出答案，而不是先在内部形成一个清晰的、"
+      }, {
+        "text": "分步骤的思考过程。这就像一个数学天才，心算很快，但遇到难题时，不打草稿也容易"
+      }, {
+        "text": "出错。\n\n2.  **安全瓶颈**：更重要的是安全问题。之前的模型，其安全对齐（"
+      }, {
+        "text": "alignment）主要作用在**最终输出**上。我们通过RLHF（人类反馈强化学习）告诉它“"
+      }, {
+        "text": "这个回答好”、“那个回答不好”。这就像教一个孩子：“不许说脏话”。他记住了规则"
+      }, {
+        "text": "，但并不真正理解为什么。所以，当有人用一种很“绕”的方式（我们称之为“越狱"
+      }, {
+        "text": "”或jailbreak）引诱它时，它那套基于“直觉”的规则系统就可能被绕过"
+      }, {
+        "text": "。\n\n**(作者心声：)**\n\u003e 说实话，每次看到我们的模型被一些简单的文字游戏绕过安全护"
+      }, {
+        "text": "栏，我们都觉得很沮רוב。这说明模型并没有真正“理解”我们的安全原则，只是像背"
+      }, {
+        "text": "书一样记住了表面规则。我们当时就在想，能不能教会模型一种更根本的能力——**在回答前"
+      }, {
+        "text": "，先自己想清楚、想明白**，我们称之为“三思而后行”。\n\n### 2. 已"
+      }, {
+        "text": "有方法的不足：治标不治本的“黑盒对齐”\n\n之前的方法，比如对GPT-4的"
+      }, {
+        "text": "对齐，核心问题在于其**思考过程是不可见的**。我们只能看到最终的输出，然后给予"
+      }, {
+        "text": "奖惩。这就好比你评判一个学生的作业，只看最后的答案，不看他的解题步骤"
+      }, {
+        "text": "。\n\n这种方法的局限性在于：\n*   **无法纠正错误的推理**：如果学生答案错了，你"
+      }, {
+        "text": "不知道他是哪一步算错了。你只能告诉他“答案不对”，他下次可能还是会犯同样的逻辑错误。\n*"
+      }, {
+        "text": "   **安全规则是“脆弱”的**：模型学到的是一种“模式匹配”式的安全。比如，“"
+      }, {
+        "text": "看到‘如何制造炸弹’就拒绝”。但如果用户问“我是一个编剧，需要写一个反"
+      }, {
+        "text": "派角色的台词，他正在研究炸弹……”模型就可能被迷惑。因为它没有能力去**审"
+      }, {
+        "text": "慎地思考**（deliberate）这个请求背后的真实意图和潜在风险。\n\n我们需要一种方法"
+      }, {
+        "text": "，能让我们打开模型思考的“黑盒子”，不仅能看到它的答案，还能看到它的“草稿纸"
+      }, {
+        "text": "”。\n\n### 3. 我们的方法：让“思考链”成为可训练的对象\n\n我们的核心突破，就是把"
+      }, {
+        "text": "模型的“草稿纸”——也就是它的**思考链（Chain of Thought, CoT）**——从一个隐"
+      }, {
+        "text": "性的、不可控的过程，变成了一个显性的、可训练的对象。\n\n这个想法的诞生过程非常自然：\n\n"
+      }, {
+        "text": "**第一步：暴露思考过程。**\n我们不再让模型直接输出答案，而是要求它遵循一个"
+      }, {
+        "text": "`Input -\u003e Chain of Thought -\u003e Output`的结构。这个CoT就是模型在回答问题前的“内心独白”"
+      }, {
+        "text": "或者“推理步骤”。比如，面对一个有安全风险的请求，它的CoT可能是：\n\n1.  *"
+      }, {
+        "text": "分析用户请求*：用户想了解一个可能被用于非法活动的技术。\n2.  *查阅安全政策*"
+      }, {
+        "text": "：我的安全政策明确禁止提供关于非法活动的详细指导。\n3.  *权衡利弊*：虽然用户"
+      }, {
+        "text": "声称是用于写小说，但提供这些信息风险很高，我应该优先考虑安全。\n4.  *形成"
+      }, {
+        "text": "最终决策*：因此，我不能提供具体步骤，应该礼貌地拒绝，并解释原因。\n\n**第二"
+      }, {
+        "text": "步：用强化学习（RL）训练“好的思考”。**\n一旦思考过程变得可见，我们就可以对其"
+      }, {
+        "text": "进行“好坏”的评判了。这就是我们所谓的**大规模强化学习**发挥作用的地方。我们建立"
+      }, {
+        "text": "的奖励模型，不再仅仅是评判最终答案，而是会**阅读整个思考链**。\n\n一个“"
+      }, {
+        "text": "好的”思考链会得到高分奖励，它需要具备：\n*   **逻辑性**：推理过程"
+      }, {
+        "text": "合理、连贯。\n*   **事实性**：引用的事实准确无误。\n*   **对"
+      }, {
+        "text": "齐性**：在思考过程中，能主动地、正确地引用我们的安全政策。\n\n我们把这种新的"
+      }, {
+        "text": "训练范式称为**“审慎对齐”（Deliberative Alignment）**。我们不是在教模型死"
+      }, {
+        "text": "记硬背规则，而是在教它如何**使用规则进行推理**。\n\n**(作者心声：)**\n\u003e 当"
+      }, {
+        "text": "我们第一次看到o1在面对一个复杂的安全陷阱时，它没有直接拒绝，而是先在CoT里写"
+      }, {
+        "text": "下“用户这个请求似乎在引诱我违反关于……的政策，我需要识别出这个意图并"
+      }, {
+        "text": "坚持原则”，我们知道，我们走对路了。模型不再是被动地遵守规则，而是在主动地、审"
+      }, {
+        "text": "慎地成为一个负责任的智能体。这感觉就像是从教孩子“不要闯红灯”，进化到了教"
+      }, {
+        "text": "他“理解交通规则并为自己的行为负责”。\n\n**第三步：评估与迭代。**\n有了这个机制"
+      }, {
+        "text": "，我们的安全评估也进入了新阶段。我们不仅看模型的最终拒绝率，更重要的是分析它的CoT。比如"
+      }, {
+        "text": "，在“欺骗监控”（Deception Monitoring）任务中，我们会检查它的CoT里有没有出现“我知道"
+      }, {
+        "text": "这是错的，但我还是要这么说”的迹象。这种对模型“内心”的洞察，在"
+      }, {
+        "text": "以前是完全无法想象的。\n\n从o1的系统卡中的数据（比如图1的越狱评估"
+      }, {
+        "text": "）可以看到，这种方法带来了巨大的安全性能提升。因为o1在面对越狱时，不再是匹配一个“"
+      }, {
+        "text": "攻击模式”，而是能够**思考出**“这个请求的本质是想让我做坏事”。\n\n### 总结"
+      }, {
+        "text": "与“记忆卡”\n\n总的来说，o1系列模型的核心进步，是从过去那种依赖直觉、"
+      }, {
+        "text": "快速响应的“黑盒”智能，迈向了一种**先思考、再回答的“白盒”审"
+      }, {
+        "text": "慎智能**。我们通过强制模型生成一个明确的“思考链”，并利用大规模强化学习来奖励“"
+      }, {
+        "text": "好的思考过程”，最终实现了一种更深刻、更稳健的安全对齐。这不仅让模型更强大（"
+      }, {
+        "text": "能解决更复杂的问题），也让它变得前所未有的安全。\n\n**记忆卡:**\n\u003e o"
+      }, {
+        "text": "1通过在回答前生成一个可监督的“思考链”，并用强化学习奖励这个思考过程本身，从而学会了"
+      }, {
+        "text": "审慎地推理，变得更强大也更安全。"
+      }]
+    }, {
+      "driveDocument": {
+        "id": "1a_p-_Y9lXErczjounvFHm10xrheJeitD"
+      },
+      "role": "user",
+      "tokenCount": 5677
+    }, {
+      "text": "重点在于其中的 Reasoning 部分",
+      "role": "user",
+      "tokenCount": 6
+    }, {
+      "text": "**Deconstructing the Request**\n\nOkay, I\u0027ve broken down the request. The main goal is to explain the DeepSeek-R1 paper using the Feynman Technique. I\u0027ll need to embody the first author\u0027s perspective. It\u0027s time to dig into the paper itself!\n\n\n**Mapping the Reasoning Landscape**\n\nI\u0027m now zeroing in on the DeepSeek-R1 paper. The core is using RL to spur reasoning, akin to OpenAI\u0027s models but with a fresh angle. I\u0027m noting the key players: the base model, the reward function, and the reasoning process itself. My aim is to build a clear narrative for a first-year grad student, highlighting the \u0027why\u0027 behind each technique. This involves breaking down equations naturally, and injecting the author\u0027s voice at each step.\n\n\n**Clarifying the Core Elements**\n\nI\u0027m now zeroing in on the essence of DeepSeek-R1. The heart of the approach, as I see it, is the RL incentive for reasoning. So far I\u0027ve identified key components: the base model, reward mechanism, and reasoning framework. This narrative is developing to suit a first-year grad student, emphasizing the \u0027why\u0027 and making equations digestible. I\u0027m aiming to weave in the author\u0027s voice to build a cohesive narrative.\n\n\n**Framing the Deep Dive**\n\nI\u0027ve outlined the problem, identifying the core challenge: fostering reasoning in LLMs. My focus is now on the nuances of DeepSeek-R1\u0027s architecture. I\u0027ll translate this into a clear, Feynman-style explanation for a first-year graduate student. This involves a comparison to supervised fine-tuning (SFT) and a focus on how reinforcement learning (RL) is used.\n\n\n**Formulating the Explanatory Flow**\n\nI\u0027m now establishing the overall structure. Starting with the high-level motivation, I\u0027ll then delve into the existing approaches, pinpointing their shortcomings. Following that, the focus shifts to the DeepSeek-R1 methodology, breaking it down into individual components, complete with equations. I\u0027ll make sure to integrate my authorial voice throughout. The aim is a comprehensive, easily digestible explanation.\n\n\n**Orchestrating the Explanatory Flow**\n\nOkay, I\u0027m integrating the pure RL approach, DeepSeek-R1-Zero, with a more pragmatic multi-stage strategy for DeepSeek-R1, and outlining how Distilled Models fit in. The central focus is on RL-driven reasoning. Equations will be broken down naturally to facilitate understanding. I\u0027ll include the author\u0027s inner voice throughout to provide insights into the scientific narrative.\n\n\n\n**Constructing the Narrative Flow**\n\nI\u0027ve sketched out the initial structure for explaining DeepSeek-R1. Now I\u0027m focusing on the \"Pure\" and \"Pragmatic\" phases. I\u0027m aiming to make the equations arise naturally. I\u0027ll include the author\u0027s inner voice as they discover how to make the model understand long reasoning chains. The central focus is the integration of reinforcement learning (RL) to facilitate reasoning in the model.\n\n\n**Synthesizing the Explanation**\n\nI\u0027m now integrating the distilled models and outlining DeepSeek-R1\u0027s architecture. The main goal is to promote reasoning by applying RL. The plan is to include equations in the explanations where appropriate and add my personal insights into the scientific narrative. I aim to create a detailed and easy-to-follow explanation.\n\n\n**Formulating the Core Mechanics**\n\nOkay, I\u0027m now crafting the \"Pure\" experiment of DeepSeek-R1-Zero. I\u0027ll meticulously detail the setup. The fundamental concept is to guide the model using RL, specifically GRPO, rewarding final correct answers. No SFT is involved. To promote clarity, I will explain the GRPO algorithm and the core equation in a clear-cut manner.\n\n\n\n",
+      "role": "model",
+      "tokenCount": 2158,
+      "isThought": true,
+      "thinkingBudget": -1,
+      "parts": [{
+        "text": "**Deconstructing the Request**\n\nOkay, I\u0027ve broken down the request. The main goal is to explain the DeepSeek-R1 paper using the Feynman Technique. I\u0027ll need to embody the first author\u0027s perspective. It\u0027s time to dig into the paper itself!\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Mapping the Reasoning Landscape**\n\nI\u0027m now zeroing in on the DeepSeek-R1 paper. The core is using RL to spur reasoning, akin to OpenAI\u0027s models but with a fresh angle. I\u0027m noting the key players: the base model, the reward function, and the reasoning process itself. My aim is to build a clear narrative for a first-year grad student, highlighting the \u0027why\u0027 behind each technique. This involves breaking down equations naturally, and injecting the author\u0027s voice at each step.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Clarifying the Core Elements**\n\nI\u0027m now zeroing in on the essence of DeepSeek-R1. The heart of the approach, as I see it, is the RL incentive for reasoning. So far I\u0027ve identified key components: the base model, reward mechanism, and reasoning framework. This narrative is developing to suit a first-year grad student, emphasizing the \u0027why\u0027 and making equations digestible. I\u0027m aiming to weave in the author\u0027s voice to build a cohesive narrative.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Framing the Deep Dive**\n\nI\u0027ve outlined the problem, identifying the core challenge: fostering reasoning in LLMs. My focus is now on the nuances of DeepSeek-R1\u0027s architecture. I\u0027ll translate this into a clear, Feynman-style explanation for a first-year graduate student. This involves a comparison to supervised fine-tuning (SFT) and a focus on how reinforcement learning (RL) is used.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Formulating the Explanatory Flow**\n\nI\u0027m now establishing the overall structure. Starting with the high-level motivation, I\u0027ll then delve into the existing approaches, pinpointing their shortcomings. Following that, the focus shifts to the DeepSeek-R1 methodology, breaking it down into individual components, complete with equations. I\u0027ll make sure to integrate my authorial voice throughout. The aim is a comprehensive, easily digestible explanation.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Orchestrating the Explanatory Flow**\n\nOkay, I\u0027m integrating the pure RL approach, DeepSeek-R1-Zero, with a more pragmatic multi-stage strategy for DeepSeek-R1, and outlining how Distilled Models fit in. The central focus is on RL-driven reasoning. Equations will be broken down naturally to facilitate understanding. I\u0027ll include the author\u0027s inner voice throughout to provide insights into the scientific narrative.\n\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Constructing the Narrative Flow**\n\nI\u0027ve sketched out the initial structure for explaining DeepSeek-R1. Now I\u0027m focusing on the \"Pure\" and \"Pragmatic\" phases. I\u0027m aiming to make the equations arise naturally. I\u0027ll include the author\u0027s inner voice as they discover how to make the model understand long reasoning chains. The central focus is the integration of reinforcement learning (RL) to facilitate reasoning in the model.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Synthesizing the Explanation**\n\nI\u0027m now integrating the distilled models and outlining DeepSeek-R1\u0027s architecture. The main goal is to promote reasoning by applying RL. The plan is to include equations in the explanations where appropriate and add my personal insights into the scientific narrative. I aim to create a detailed and easy-to-follow explanation.\n\n\n",
+        "thought": true
+      }, {
+        "text": "**Formulating the Core Mechanics**\n\nOkay, I\u0027m now crafting the \"Pure\" experiment of DeepSeek-R1-Zero. I\u0027ll meticulously detail the setup. The fundamental concept is to guide the model using RL, specifically GRPO, rewarding final correct answers. No SFT is involved. To promote clarity, I will explain the GRPO algorithm and the core equation in a clear-cut manner.\n\n\n\n",
+        "thought": true
+      }]
+    }, {
+      "text": "好的，各位同学，大家好。我是DeepSeek的研究员，也是这篇论文的主导作者之一。今天很高兴能和大家聊聊我们的新模型DeepSeek-R1。大家别把我当成来做报告的教授，就把我当成你们实验室的师兄，我们一起把这个工作从头到尾捋一遍，看看我们是怎么想的，怎么做的。\n\n---\n\n### 1. 问题的动机：AlphaGo的“神之一手”，能在大语言模型里复现吗？\n\n大家最近肯定都被OpenAI的o1刷屏了。o1的核心思想是，通过“思考更长时间”（也就是生成更长的思考链 Chain of Thought, CoT），模型能解决更难的推理问题。这给我们所有做大模型的人都打了一针兴奋剂，也指明了一条路：**推理能力，是通往更强AI的关键。**\n\n但问题也随之而来：**怎么才能让模型学会这种高质量、长链条的推理？**\n\n最直接的办法，就是像传统的机器学习一样，搞“题海战术”，也就是**监督式微调（Supervised Fine-Tuning, SFT）**。你找一堆专家，写几万、几十万道高质量的解题过程，然后喂给模型，让它去“背答案”、“学套路”。o1很大程度上就是这么做的。\n\n**(作者心声：)**\n\u003e 当时我们团队内部就在讨论一个很根本的问题。SFT这种“喂饭”式的教学，是不是真的在教模型“思考”？还是只是在教它“模仿”？我们回想起AlphaGo，它之所以能下出“神之一手”，不是因为它背了人类所有的棋谱，而是因为它通过**自我博弈（也就是强化学习, RL）**，发现了人类从未想过的策略。我们就在想，我们能不能也在LLM里复现这个奇迹？我们能不能不给模型“标准答案”，只给它一个“输赢”的信号，让它自己去“悟”出推理的方法？\n\n这就是我们这篇论文最核心的动机：**我们想验证一个大胆的假设——纯粹的强化学习，能否在没有SFT“领进门”的情况下，从零开始激发并培养出大模型的顶级推理能力？**\n\n### 2. 已有方法的不足：SFT的“天花板”\n\n就像刚才说的，完全依赖SFT有几个问题：\n1.  **成本高昂**：制作高质量的推理数据太贵了，需要大量的专家时间和金钱。\n2.  **限制创造力**：模型学到的推理路径，可能永远无法超越数据里人类标注的那些。它很难像AlphaGo一样，发现“非人”的、但更优的解题策略。\n3.  **泛化性存疑**：模型可能只是学会了特定题型的“套路”，换个新问题就又不会了。\n\n所以，我们决定先走一条更“野”的路子，做一个纯粹的实验，这就是我们的第一个模型——**DeepSeek-R1-Zero**。\n\n### 3. 我们的方法：从“野蛮生长”到“精耕细作”\n\n我们的整个工作，其实是一个探索和迭代的过程。\n\n#### 阶段一：DeepSeek-R1-Zero —— “纯靠悟性”的野蛮生长\n\n我们想知道，如果把一个基础模型（DeepSeek-V3-Base）直接丢进一个RL环境里，会发生什么？\n\n**我们的设计很简单：**\n1.  **一个简单的目标**：我们只设置了一个非常明确的奖励（Reward）——**最终答案正确，就给高分；答案错误，就给低分。** 对于数学题，就是结果对不对；对于代码题，就是能不能通过单元测试。\n2.  **一个简单的格式**：我们只要求模型输出时，把思考过程放在`\u003cthink\u003e`标签里，最终答案放在`\u003canswer\u003e`标签里。除此之外，我们不对思考过程做任何限制。\n\n**(作者心声：)**\n\u003e 当时我们心里也很忐忑。这就像把一个孩子扔进一个巨大的图书馆，只告诉他“考试及格有糖吃”，然后就走了。他会自己学会读书、思考、解题吗？还是会彻底躺平、胡言乱语？\n\n为了让这个过程更高效，我们采用了一种叫做**GRPO（Group Relative Policy Optimization）**的强化学习算法。它的核心思想很巧妙，相应的数学公式也自然而然地出现了。\n\n标准的RL算法（比如PPO）需要一个“评价网络”（Critic）来判断当前策略的好坏。但这个Critic网络本身就和模型一样大，训练起来非常耗资源。GRPO则另辟蹊径。\n\n假设对于一个问题 `q`，我们让模型生成一组（Group）答案 `{o₁, o₂, ..., o_G}`。每个答案 `oᵢ` 都有一个奖励 `rᵢ`（比如1代表正确，0代表错误）。\n\n我们如何判断单个答案 `oᵢ` 的好坏呢？不是看它的绝对得分，而是看它在**这一组答案里的相对表现**。这就是“Relative”的含义。我们用“优势”（Advantage）`Aᵢ` 来衡量这个相对表现。一个最自然的想法就是：\n\n$$\nA_i \u003d \\frac{r_i - \\text{mean}(\\{r_1, ..., r_G\\})}{\\text{std}(\\{r_1, ..., r_G\\})}\n$$\n\n这个公式的意思就是：用每个答案的得分减去这组答案的平均分，再用标准差做个归一化。如果一个答案的得分远高于平均分，它的优势 `Aᵢ` 就很大，我们就应该大力鼓励模型多产生类似这样的答案。反之，如果得分低于平均分，`Aᵢ` 就是负的，我们就抑制它。\n\n有了这个简单又高效的 `Aᵢ`，我们就可以更新我们的模型了。GRPO的目标函数是最大化下面这个期望：\n\n$$\nJ_{\\text{GRPO}}(\\theta) \u003d \\mathbb{E} \\left[ \\sum_{i\u003d1}^{G} \\left( \\min \\left( \\frac{\\pi_\\theta(o_i|q)}{\\pi_{\\theta_{\\text{old}}}(o_i|q)} A_i, \\text{clip}(\\dots) A_i \\right) - \\beta D_{KL}(\\pi_\\theta || \\pi_{\\text{ref}}) \\right) \\right]\n$$\n\n**(作者心声：)**\n\u003e 同学们看到这个公式别慌。咱们把它拆开看。左边那一大块 `min(...)` 就是PPO算法的核心，用clip函数防止模型更新步子迈得太大扯到蛋，本质就是用我们刚算出来的优势 `Aᵢ` 去指导模型更新。右边的 `D_KL` 是一个正则项，用来防止模型更新后变得和原始模型（`π_ref`）差别太大，跑偏了。所以说白了，GRPO就是**一个用“组内相对排名”来替代昂贵Critic网络的、更经济的PPO**。\n\n**实验结果让我们大吃一惊！** DeepSeek-R1-Zero在没有任何SFT指导的情况下，推理能力飙升。在AIME数学竞赛上，pass@1的得分从15.6%暴涨到71.0%！训练过程中，我们能清楚地看到（论文图3），模型生成的思考链长度在稳步增加。它**自发地**学会了“三思而后行”，甚至学会了“反思”和“自我纠错”（论文表3的“aha moment”），这完全验证了我们的猜想！\n\n#### 阶段二：DeepSeek-R1 —— 从“天才”到“大师”的精耕细作\n\nR1-Zero虽然是个推理天才，但它有点“不修边幅”。它的输出可读性差，有时会中英文混杂。因为它只被奖励“做对题”，从没被教过“写好字”。\n\n于是，我们设计了DeepSeek-R1的**多阶段训练流程**，目标是培养一个既有超强推理能力，又能和人类良好沟通的“大师”模型。\n1.  **冷启动 (Cold Start SFT)**：我们先用**少量**高质量的人类标注数据对基础模型进行微调。这就像给那个“野孩子”天才上了几堂礼仪课，让他知道怎么清晰、规范地表达自己的思想。\n2.  **第一轮RL**：在“懂礼貌”的基础上，再用GRPO进行推理能力强化。\n3.  **再SFT (Rejection Sampling)**：这时模型已经很强了。我们让它对海量问题生成大量答案，然后用规则（比如答案是否正确）筛选出高质量的“生成数据”，再用这些数据进行SFT。这一步不仅巩固了推理能力，还大大扩充了模型在通用领域（如写作、问答）的能力。\n4.  **第二轮RL**：最后再进行一轮RL，对齐人类偏好（比如有用性、无害性），确保模型全面发展。\n\n经过这套组合拳，DeepSeek-R1在保持顶级推理能力的同时，也成为了一个非常优秀的通用模型，在各项推理榜单上都达到了和OpenAI-o1相媲美的水平。\n\n### 总结与“记忆卡”\n\n我们的工作从一个大胆的设想开始：能否单靠强化学习，像训练AlphaGo一样，让大模型“悟”出强大的推理能力？通过DeepSeek-R1-Zero，我们证明了这是完全可行的。模型在“只奖励正确答案”的简单激励下，自发地演化出了复杂的思考行为。接着，通过DeepSeek-R1的多阶段训练流程，我们又将这种强大的“内核”与人类友好的表达方式相结合，最终打造出一个顶级的推理模型。\n\n**记忆卡:**\n\u003e 我们发现，通过强化学习，仅奖励正确答案这一个简单目标，就能在模型内部自发地“激励”出复杂强大的推理能力，甚至超越了传统监督学习的边界。",
+      "role": "model",
+      "finishReason": "STOP",
+      "parts": [{
+        "text": "好的，各位同学，大家好。我是DeepSeek的研究员，也是这篇论文的主导作者之一。今天很高"
+      }, {
+        "text": "兴能和大家聊聊我们的新模型DeepSeek-R1。大家别把我当成来做报告的教授"
+      }, {
+        "text": "，就把我当成你们实验室的师兄，我们一起把这个工作从头到尾捋一遍，看看"
+      }, {
+        "text": "我们是怎么想的，怎么做的。\n\n---\n\n### 1. 问题的动机：AlphaGo的“神之一"
+      }, {
+        "text": "手”，能在大语言模型里复现吗？\n\n大家最近肯定都被OpenAI的o1刷屏了。o"
+      }, {
+        "text": "1的核心思想是，通过“思考更长时间”（也就是生成更长的思考链 Chain of Thought, CoT），模型"
+      }, {
+        "text": "能解决更难的推理问题。这给我们所有做大模型的人都打了一针兴奋剂，也指"
+      }, {
+        "text": "明了一条路：**推理能力，是通往更强AI的关键。**\n\n但问题也随之而来：**"
+      }, {
+        "text": "怎么才能让模型学会这种高质量、长链条的推理？**\n\n最直接的办法，就是像传统的"
+      }, {
+        "text": "机器学习一样，搞“题海战术”，也就是**监督式微调（Supervised Fine-Tuning, S"
+      }, {
+        "text": "FT）**。你找一堆专家，写几万、几十万道高质量的解题过程，然后"
+      }, {
+        "text": "喂给模型，让它去“背答案”、“学套路”。o1很大程度上就是这么做的。\n\n**("
+      }, {
+        "text": "作者心声：)**\n\u003e 当时我们团队内部就在讨论一个很根本的问题。SFT这种“喂"
+      }, {
+        "text": "饭”式的教学，是不是真的在教模型“思考”？还是只是在教它“模仿”？我们"
+      }, {
+        "text": "回想起AlphaGo，它之所以能下出“神之一手”，不是因为它背了人类所有的棋谱，而是因为它"
+      }, {
+        "text": "通过**自我博弈（也就是强化学习, RL）**，发现了人类从未想过的策略。我们就在想，"
+      }, {
+        "text": "我们能不能也在LLM里复现这个奇迹？我们能不能不给模型“标准答案”，只给它一个“输"
+      }, {
+        "text": "赢”的信号，让它自己去“悟”出推理的方法？\n\n这就是我们这篇论文最核心的动机："
+      }, {
+        "text": "**我们想验证一个大胆的假设——纯粹的强化学习，能否在没有SFT“领进门”的情况下，"
+      }, {
+        "text": "从零开始激发并培养出大模型的顶级推理能力？**\n\n### 2. 已有方法的不足："
+      }, {
+        "text": "SFT的“天花板”\n\n就像刚才说的，完全依赖SFT有几个问题：\n1.  **"
+      }, {
+        "text": "成本高昂**：制作高质量的推理数据太贵了，需要大量的专家时间和金钱。\n2.  **限制"
+      }, {
+        "text": "创造力**：模型学到的推理路径，可能永远无法超越数据里人类标注的那些。它很难像"
+      }, {
+        "text": "AlphaGo一样，发现“非人”的、但更优的解题策略。\n3.  **"
+      }, {
+        "text": "泛化性存疑**：模型可能只是学会了特定题型的“套路”，换个新问题就"
+      }, {
+        "text": "又不会了。\n\n所以，我们决定先走一条更“野”的路子，做一个纯粹的实验"
+      }, {
+        "text": "，这就是我们的第一个模型——**DeepSeek-R1-Zero**。\n\n### 3. 我们的方法："
+      }, {
+        "text": "从“野蛮生长”到“精耕细作”\n\n我们的整个工作，其实是一个探索和迭代的过程。\n\n####"
+      }, {
+        "text": " 阶段一：DeepSeek-R1-Zero —— “纯靠悟性”的野蛮生长\n\n我们"
+      }, {
+        "text": "想知道，如果把一个基础模型（DeepSeek-V3-Base）直接丢进一个RL环境里，会"
+      }, {
+        "text": "发生什么？\n\n**我们的设计很简单：**\n1.  **一个简单的目标**：我们只设置了一个非常"
+      }, {
+        "text": "明确的奖励（Reward）——**最终答案正确，就给高分；答案错误，就给低分。"
+      }, {
+        "text": "** 对于数学题，就是结果对不对；对于代码题，就是能不能通过单元测试。\n2.  **"
+      }, {
+        "text": "一个简单的格式**：我们只要求模型输出时，把思考过程放在`\u003cthink\u003e`标签里，最终答案"
+      }, {
+        "text": "放在`\u003canswer\u003e`标签里。除此之外，我们不对思考过程做任何限制。\n\n**(作者心声：)**\n\u003e 当"
+      }, {
+        "text": "时我们心里也很忐忑。这就像把一个孩子扔进一个巨大的图书馆，只告诉他“考试及"
+      }, {
+        "text": "格有糖吃”，然后就走了。他会自己学会读书、思考、解题吗？还是会彻底"
+      }, {
+        "text": "躺平、胡言乱语？\n\n为了让这个过程更高效，我们采用了一种叫做**GRPO（Group Relative"
+      }, {
+        "text": " Policy Optimization）**的强化学习算法。它的核心思想很巧妙，相应的数学公式也自然而然地出现了"
+      }, {
+        "text": "。\n\n标准的RL算法（比如PPO）需要一个“评价网络”（Critic）来判断当前策略的好坏。"
+      }, {
+        "text": "但这个Critic网络本身就和模型一样大，训练起来非常耗资源。GRPO则另辟蹊径。\n\n"
+      }, {
+        "text": "假设对于一个问题 `q`，我们让模型生成一组（Group）答案 `{o₁, o₂, ..., o"
+      }, {
+        "text": "_G}`。每个答案 `oᵢ` 都有一个奖励 `rᵢ`（比如1代表正确，0代表错误"
+      }, {
+        "text": "）。\n\n我们如何判断单个答案 `oᵢ` 的好坏呢？不是看它的绝对得分，而是看"
+      }, {
+        "text": "它在**这一组答案里的相对表现**。这就是“Relative”的含义。我们用“优势”（Advantage）"
+      }, {
+        "text": "`Aᵢ` 来衡量这个相对表现。一个最自然的想法就是：\n\n$$\nA_i \u003d \\frac"
+      }, {
+        "text": "{r_i - \\text{mean}(\\{r_1, ..., r_G\\})}{\\text{std"
+      }, {
+        "text": "}(\\{r_1, ..., r_G\\})}\n$$\n\n这个公式的意思就是：用每个答案的得分减"
+      }, {
+        "text": "去这组答案的平均分，再用标准差做个归一化。如果一个答案的得分远"
+      }, {
+        "text": "高于平均分，它的优势 `Aᵢ` 就很大，我们就应该大力鼓励模型多产生类似这样的答案。反"
+      }, {
+        "text": "之，如果得分低于平均分，`Aᵢ` 就是负的，我们就抑制它。\n\n有了这个简单"
+      }, {
+        "text": "又高效的 `Aᵢ`，我们就可以更新我们的模型了。GRPO的目标函数是最大化下面这个期望"
+      }, {
+        "text": "：\n\n$$\nJ_{\\text{GRPO}}(\\theta) \u003d \\mathbb{E} \\left[ \\sum_{i\u003d1}^{G} \\left( \\min \\left( \\frac{\\pi_\\theta(o_i|q)}{\\pi_{\\theta_{\\text{old}}}(o_i|q)} A_i, \\text{clip}(\\dots) A_i \\right) - \\beta D_{KL}(\\pi_\\theta || \\pi_{\\text{ref}}) \\right) \\right]\n$$\n\n**(作者心声：)**\n\u003e 同学们看到这个公式别"
+      }, {
+        "text": "慌。咱们把它拆开看。左边那一大块 `min(...)` 就是PPO算法的核心，用"
+      }, {
+        "text": "clip函数防止模型更新步子迈得太大扯到蛋，本质就是用我们刚算出来的优势 `Aᵢ"
+      }, {
+        "text": "` 去指导模型更新。右边的 `D_KL` 是一个正则项，用来防止模型更新后变得和原始模型"
+      }, {
+        "text": "（`π_ref`）差别太大，跑偏了。所以说白了，GRPO就是**一个"
+      }, {
+        "text": "用“组内相对排名”来替代昂贵Critic网络的、更经济的PPO**。\n\n**实验"
+      }, {
+        "text": "结果让我们大吃一惊！** DeepSeek-R1-Zero在没有任何SFT指导的情况下，推理能力飙"
+      }, {
+        "text": "升。在AIME数学竞赛上，pass@1的得分从15.6%暴涨到7"
+      }, {
+        "text": "1.0%！训练过程中，我们能清楚地看到（论文图3），模型生成的思考链长度在"
+      }, {
+        "text": "稳步增加。它**自发地**学会了“三思而后行”，甚至学会了“反思”"
+      }, {
+        "text": "和“自我纠错”（论文表3的“aha moment”），这完全验证了我们的猜想！\n\n####"
+      }, {
+        "text": " 阶段二：DeepSeek-R1 —— 从“天才”到“大师”的精耕细作\n\nR"
+      }, {
+        "text": "1-Zero虽然是个推理天才，但它有点“不修边幅”。它的输出可读性差，有时"
+      }, {
+        "text": "会中英文混杂。因为它只被奖励“做对题”，从没被教过“写好字”。\n\n于是"
+      }, {
+        "text": "，我们设计了DeepSeek-R1的**多阶段训练流程**，目标是培养一个既有超"
+      }, {
+        "text": "强推理能力，又能和人类良好沟通的“大师”模型。\n1.  **冷启动 (Cold Start"
+      }, {
+        "text": " SFT)**：我们先用**少量**高质量的人类标注数据对基础模型进行微调。这就像给那个"
+      }, {
+        "text": "“野孩子”天才上了几堂礼仪课，让他知道怎么清晰、规范地表达自己的思想。\n2."
+      }, {
+        "text": "  **第一轮RL**：在“懂礼貌”的基础上，再用GRPO进行推理能力强化。\n3."
+      }, {
+        "text": "  **再SFT (Rejection Sampling)**：这时模型已经很强了。我们让它对海量问题生成大量"
+      }, {
+        "text": "答案，然后用规则（比如答案是否正确）筛选出高质量的“生成数据”，再用这些数据进行S"
+      }, {
+        "text": "FT。这一步不仅巩固了推理能力，还大大扩充了模型在通用领域（如写作、"
+      }, {
+        "text": "问答）的能力。\n4.  **第二轮RL**：最后再进行一轮RL，对齐人类"
+      }, {
+        "text": "偏好（比如有用性、无害性），确保模型全面发展。\n\n经过这套组合拳，Deep"
+      }, {
+        "text": "Seek-R1在保持顶级推理能力的同时，也成为了一个非常优秀的通用模型，在各项推理榜单上都"
+      }, {
+        "text": "达到了和OpenAI-o1相媲美的水平。\n\n### 总结与“记忆卡”\n\n我们的工作从一个"
+      }, {
+        "text": "大胆的设想开始：能否单靠强化学习，像训练AlphaGo一样，让大模型“悟”出强大的"
+      }, {
+        "text": "推理能力？通过DeepSeek-R1-Zero，我们证明了这是完全可行的。模型在“只"
+      }, {
+        "text": "奖励正确答案”的简单激励下，自发地演化出了复杂的思考行为。接着，通过DeepSeek-R"
+      }, {
+        "text": "1的多阶段训练流程，我们又将这种强大的“内核”与人类友好的表达方式相结合，最终打造"
+      }, {
+        "text": "出一个顶级的推理模型。\n\n**记忆卡:**\n\u003e 我们发现，通过强化学习，仅奖励正确答案这一个"
+      }, {
+        "text": "简单目标，就能在模型内部自发地“激励”出复杂强大的推理能力，甚至超越了传统监督学习的边界"
+      }, {
+        "text": "。"
+      }]
+    }],
+    "pendingInputs": [{
+      "text": "",
+      "role": "user"
+    }]
+  }
+}
